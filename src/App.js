@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable import/no-extraneous-dependencies */
+import React from 'react';
+// import ReactDOM from "react-dom";
+import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
+import ReactFullpage from '@fullpage/react-fullpage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './styles.css';
+
+class MySection extends React.Component {
+	render() {
+		return (
+			<div className="section">
+				<h3>{this.props.content}</h3>
+			</div>
+		);
+	}
 }
+
+const anchors = ['Welcome', 'About', 'Skills', 'Projects'];
+
+const App = () => (
+	<ReactFullpage
+		anchors={anchors}
+		navigation
+		navigationTooltips={anchors}
+		sectionsColor={[
+			'#282c34',
+			'#ff5f45',
+			'#0798ec',
+			'#ff5f45'
+		]}
+		onLeave={(origin, destination, direction) => {
+			console.log('onLeave event', {
+				origin,
+				destination,
+				direction
+			});
+		}}
+		render={({ state, fullpageApi }) => {
+			console.log(
+				'render prop change',
+				state,
+				fullpageApi
+			); // eslint-disable-line no-console
+
+			return (
+				<div>
+					<MySection content={'Hello There'} />
+					<MySection content={'About Me'} />
+					<MySection content={'Skills'} />
+					<MySection content={'Projects'} />
+				</div>
+			);
+		}}
+	/>
+);
 
 export default App;
