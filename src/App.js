@@ -16,14 +16,19 @@ class MySection extends React.Component {
 	}
 }
 
-const anchors = ['firstPage', 'secondPage', 'thirdPage'];
+const anchors = ['Welcome', 'About', 'Skills', 'Projects'];
 
 const App = () => (
 	<ReactFullpage
 		anchors={anchors}
 		navigation
 		navigationTooltips={anchors}
-		sectionsColor={['#282c34', '#ff5f45', '#0798ec']}
+		sectionsColor={[
+			'#282c34',
+			'#ff5f45',
+			'#0798ec',
+			'#ff5f45'
+		]}
 		onLeave={(origin, destination, direction) => {
 			console.log('onLeave event', {
 				origin,
@@ -40,9 +45,10 @@ const App = () => (
 
 			return (
 				<div>
-					<MySection content={'Slide down!'} />
-					<MySection content={'Keep going!'} />
-					<MySection content={'Slide up!'} />
+					<MySection content={'Hello There'} />
+					<MySection content={'About Me'} />
+					<MySection content={'Skills'} />
+					<MySection content={'Projects'} />
 				</div>
 			);
 		}}
