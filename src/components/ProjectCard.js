@@ -1,8 +1,10 @@
 import React from 'react';
 // import { useMediaQuery } from 'react-responsive';
+import '../styles/ProjectCard.scss';
 
 export default function ProjectCard(props) {
-	const { projectName, hrefLink, imgSrc, imgAlt } = props.project;
+	const { projectName, hrefLink, imgSrc, imgAlt } =
+		props.project;
 	// const isMobile = useMediaQuery({
 	// 	query: '(max-width: 750px)'
 	// });
@@ -17,15 +19,15 @@ export default function ProjectCard(props) {
 			<div className="imageContainer">
 				<img src={imgSrc} alt={imgAlt} />
 			</div>
-			<h3 className="projectTitle">{projectName}</h3>
+			<h4 className="projectTitle">{projectName}</h4>
 		</a>
 	);
 }
 
-
-
-{/* {isMobile && (
+{
+	/* {isMobile && (
     <div className="textOverlay">
         <p>{description}</p>
     </div>
-)} */}
+)} */
+}
