@@ -1,7 +1,7 @@
-import twitterClone from './assets/images/nextJSTwitterClone.png';
-import coMake from './assets/images/co-make.png';
-import LAN from './assets/images/LAN.jpg';
-import ayati from './assets/images/7ayatiCafe.png'
+import twitterClone from './images/nextJSTwitterClone.png';
+import coMake from './images/co-make.png';
+import LAN from './images/LAN.jpg';
+import ayati from './images/7ayatiCafe.png'
 
 const projectsList = [
   {

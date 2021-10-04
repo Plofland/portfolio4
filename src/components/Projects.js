@@ -1,14 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
 import projectsList from '../projectsList'
 import ProjectCard from './ProjectCard';
+import '../styles/Projects.scss'
 
 export default function Projects() {
-
 	return (
-		<ProjectsSection className='projectSection' id="projects">
-			<SectionTitle>Projects</SectionTitle>
-			<ProjectsContainer>
+		<div className='projectsSection'>
+			<h2>Projects</h2>
+			<div className='projectsContainer'>
 				{projectsList.map((project) => {
 					return (
 						<ProjectCard
@@ -17,26 +16,7 @@ export default function Projects() {
 						/>
 					);
 				})}
-			</ProjectsContainer>
-		</ProjectsSection>
+			</div>
+		</div>
 	);
 }
-
-const ProjectsSection = styled.div`
-	display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-	padding: 2rem;
-	background-color: blue;
-`;
-
-const SectionTitle = styled.div`
-	font-size: 3rem;
-`;
-
-const ProjectsContainer = styled.div`
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-`;

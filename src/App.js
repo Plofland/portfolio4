@@ -4,12 +4,13 @@ import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverf
 import ReactFullpage from '@fullpage/react-fullpage';
 
 import './styles/App.scss';
+import Projects from './components/Projects';
 
 class MySection extends React.Component {
 	render() {
 		return (
 			<div className="section">
-				<h3>{this.props.content}</h3>
+				{this.props.content}
 			</div>
 		);
 	}
@@ -47,7 +48,7 @@ const App = () => (
 					<MySection content={'Hello There'} />
 					<MySection content={'About Me'} />
 					<MySection content={'Skills'} />
-					<MySection content={'Projects'} />
+					<MySection content={<Projects/>} />
 				</div>
 			);
 		}}
