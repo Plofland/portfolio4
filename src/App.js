@@ -1,10 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
-// import ReactDOM from "react-dom";
 import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import './styles.css';
+import './styles/App.scss';
 
 class MySection extends React.Component {
 	render() {
