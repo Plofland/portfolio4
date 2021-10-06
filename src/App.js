@@ -3,8 +3,13 @@ import React from 'react';
 import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import './styles/App.scss';
+//Components
 import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Welcome from './components/Welcome';
+
+import './styles/App.scss';
+import About from './components/About';
 
 class MySection extends React.Component {
 	render() {
@@ -45,10 +50,10 @@ const App = () => (
 
 			return (
 				<div>
-					<MySection content={'Hello There'} />
-					<MySection content={'About Me'} />
-					<MySection content={'Skills'} />
-					<MySection content={<Projects/>} />
+					<MySection content={<Welcome />} />
+					<MySection content={<About />} />
+					<MySection content={<Skills />} />
+					<MySection content={<Projects />} />
 				</div>
 			);
 		}}
