@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Skills.scss';
-import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 
 export default function Skills() {
 	return (
@@ -11,7 +11,7 @@ export default function Skills() {
 			<div className="skillsList">
 				<div className="skillsProficient">
 					<h3>Proficient</h3>
-					<Slide bottom cascade>
+					<Fade bottom cascade>
 						<div>
 							<img
 								src="https://img.shields.io/badge/-HTML5-61DAFB?logo=html5&logoColor=red&style=plastic"
@@ -94,11 +94,11 @@ export default function Skills() {
 								alt="Cypress badge"
 							/>
 						</div>
-					</Slide>
+					</Fade>
 				</div>
 				<div className="skillsSubSection">
 					<h3>Experienced</h3>
-					<Slide bottom cascade>
+					<Fade bottom cascade delay={300}>
 						<div>
 							<img
 								src="https://img.shields.io/badge/-Django-61DAFB?logo=django&logoColor=092E20&style=plastic"
@@ -173,7 +173,7 @@ export default function Skills() {
 								alt="Adobe Photoshop badge"
 							/>
 						</div>
-					</Slide>
+					</Fade>
 				</div>
 			</div>
 		</div>
