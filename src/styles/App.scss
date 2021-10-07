@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import './colorPalette';
 
 *,
 *::after,
@@ -7,37 +8,45 @@
 }
 
 html,
-body, h1, h2, h3, h4 {
+body,
+h1,
+h2,
+h3,
+h4 {
 	margin: 0;
 	padding: 0;
-	font-family: 'Fira Sans', sans-serif, -apple-system, BlinkMacSystemFont,;
+	font-family: 'Fira Sans', sans-serif, -apple-system,
+		BlinkMacSystemFont;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-h2 {
-	font-size: 4em;
-	text-align: center;
-	color: #fff;
-	font-weight: 700;
-}
-h3 {
-	font-size: 3em;
-	text-align: center;
-	color: #fff;
-	font-weight: 600;
-}
-h4 {
-	font-size: 1em;
-	font-weight: 600;
-}
 
-#section1 {
-	color: #fff;
+	h2 {
+		font-size: 4em;
+		text-align: center;
+		color: #fff;
+		font-weight: 700;
+	}
+	h3 {
+		font-size: 2em;
+		text-align: center;
+		color: #fff;
+		font-weight: 600;
+	}
+	h4 {
+		font-size: 1em;
+		font-weight: 600;
+	}
 }
 
 .fp-section {
 	text-align: center;
 }
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background: $ivory;
+}
+
 button {
 	position: fixed;
 	top: 20px;

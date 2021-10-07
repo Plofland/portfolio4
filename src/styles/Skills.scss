@@ -1,29 +1,47 @@
+@import '../styles/colorPalette.scss';
+// @import url('../styles/_colorPalette.scss');
+
 .skills {
-  .skillsList {
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px;
-    text-align: center;
+	background-image: url(../images/wreckBeachRocks.jpeg);
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
 
-    img {
-      height: 30px;
-      margin: 0 5px;
-    }
+	.skillsList {
+		padding: 2%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		flex-grow: 1;
+		border: 3px solid black;
+		align-items: center;
+		text-align: center;
 
-    h3 {
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 1rem;
-      width: 60%;
-      background-position: 0 100%;
-      background-size: 100% 2px;
-      background-repeat: repeat-x;
-    }
+		img {
+			height: 30px;
+			margin: 0 5px;
+		}
 
-    .skillsProficient{
-      padding: 2%;
-    }
-  }
+		h3 {
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 1rem;
+			width: 60%;
+			background: linear-gradient(
+				to left,
+				transparent,
+				$darkText,
+				transparent 100%
+			);
+			background-position: 0 100%;
+			background-size: 100% 2px;
+			background-repeat: repeat-x;
+		}
+
+		.skillsSubSection {
+			padding: 2%;
+      background-color: $transMidnightBlue;
+		}
+	}
 }
