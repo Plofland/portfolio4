@@ -33,7 +33,6 @@ export default function About() {
 							<p>
 								<u>Life outside of code:</u>
 								<p>
-									{' '}
 									On my free time I love
 									cooking, camping,
 									hiking, backpacking,
