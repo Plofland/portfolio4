@@ -30,9 +30,9 @@ const App = () => (
 		navigationTooltips={anchors}
 		sectionsColor={[
 			'#282c34',
-			'#ff5f45',
+			'#364355',
 			'#0798ec',
-			'#ff5f45'
+			'#4E510F'
 		]}
 		onLeave={(origin, destination, direction) => {
 			console.log('onLeave event', {
