@@ -1,3 +1,26 @@
-.about{
-    text-align: center;
+.about {
+	text-align: center;
+
+	.descriptionAndImage {
+		display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+		.selfDescription {
+			width: 35%;
+			flex-direction: column;
+			// justify-content: space-evenly;
+            // word-wrap: break-word;
+            // overflow-wrap: break-word;
+            // word-break: normal;
+            // word-wrap: no-wrap;
+            // white-space: nowrap;
+            // white-space: wrap;
+            border: 1px solid black;
+		}
+
+        img {
+            height: 500px;
+        }
+	}
 }
