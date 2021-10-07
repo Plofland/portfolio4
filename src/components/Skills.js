@@ -5,11 +5,8 @@ import Fade from 'react-reveal/Fade';
 export default function Skills() {
 	return (
 		<div className="skills">
-			<div className="sectionTitle">
-				<h2>Skills</h2>
-			</div>
 			<div className="skillsList">
-				<div className="skillsProficient">
+				<div className="skillsSubSection">
 					<h3>Proficient</h3>
 					<Fade bottom cascade>
 						<div>
@@ -98,7 +95,7 @@ export default function Skills() {
 				</div>
 				<div className="skillsSubSection">
 					<h3>Experienced</h3>
-					<Fade bottom cascade delay={300}>
+					<Fade bottom cascade delay={400}>
 						<div>
 							<img
 								src="https://img.shields.io/badge/-Django-61DAFB?logo=django&logoColor=092E20&style=plastic"
