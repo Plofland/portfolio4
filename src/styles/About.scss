@@ -3,6 +3,8 @@
 .about {
 	text-align: center;
 	border: 1px solid green;
+	height: 100vh;
+	font-size: larger;
 
 	.descriptionContactImage {
 		display: flex;
@@ -11,6 +13,7 @@
 
 		.descriptionContact {
 			margin: 2rem;
+			flex-grow: 2;
 			border: 1px solid green;
 
 			.selfDescription {
@@ -19,41 +22,52 @@
 				border: 1px solid black;
 			}
 		}
-
-		img {
+		.image {
 			height: 600px;
-			border-radius: 50px 20px;
+			flex-grow: 1;
+			border: 3px solid white;
 			margin: 3rem;
-			// border: 1rem solid transparent;
-			// border: 2px solid black;
-			padding: 1rem;
-			background-image: linear-gradient(
-				45deg,
-				$midnightBlue,
-				$turquoise
-			);
-			background-origin: border-box;
-			background-clip: content-box, border-box;
+
+			img {
+				height: 100%;
+				border-radius: 50px 20px;
+				padding: 1rem;
+				background-image: linear-gradient(
+					45deg,
+					$midnightBlue,
+					$turquoise
+				);
+				background-origin: border-box;
+			}
 		}
 	}
 }
 
 //*Tablet Styling
 @media (max-width: 1024px) {
-	.about{
-
-		.descriptionContactImage{
+	.about {
+		.descriptionContactImage {
+			display: flex;
 			flex-direction: column;
-			
-			.descriptionContact{
-				.selfDescription{
-					padding: 2rem 3rem;
+			justify-content: space-evenly;
+			height: 100%;
+
+			.descriptionContact {
+				flex-grow: 1;
+				margin: 0;
+				.selfDescription {
+					padding: 1rem 3rem;
 					font-size: large;
 				}
 			}
-			img{
-				height: 500px;
+			.image {
 				margin: 0;
+
+				flex-grow: 1;
+				img {
+					background-image: none;
+					padding: 0;
+				}
 			}
 		}
 	}
@@ -61,12 +75,20 @@
 
 //*Phone Styling
 @media (max-width: 414px) {
-	.about{
-		.descriptionContactImage{
-			.descriptionContact{
-				.selfDescription{
+	.about {
+		.descriptionContactImage {
+			.descriptionContact {
+				.selfDescription {
 					padding: 1rem;
 					font-size: x-small;
+				}
+			}
+			.image {
+				flex-grow: 1;
+				overflow: auto;
+				
+				img {
+					margin: 0;
 				}
 			}
 		}

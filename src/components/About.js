@@ -36,11 +36,12 @@ export default function About() {
 					</Fade>
 					<Contact />
 				</div>
-
-				<img
-					src={selfBust}
-					alt="Peter Lofland bust shot"
-				/>
+				<div className="image">
+					<img
+						src={selfBust}
+						alt="Peter Lofland bust shot"
+					/>
+				</div>
 			</div>
 		</div>
 	);
