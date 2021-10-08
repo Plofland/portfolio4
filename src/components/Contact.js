@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Contact.scss';
 import Fade from 'react-reveal/Fade';
+import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -11,6 +12,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
+    const isMobile = useMediaQuery({
+		query: '(max-width: 750px)'
+	});
 	return (
 		<div className="socialIcons">
 			<Fade bottom cascade delay={400}>
@@ -33,6 +37,7 @@ function Contact() {
 								<FontAwesomeIcon
 									icon={faEnvelope}
 									className="fa fa-envelope"
+                                    size={isMobile ? 'xs' : null}
 								/>
 							</span>
 						</a>
@@ -55,6 +60,7 @@ function Contact() {
 								<FontAwesomeIcon
 									icon={faLinkedin}
 									className="fa fa-linkedin"
+                                    size={isMobile ? 'xs' : null}
 								/>
 							</span>
 						</a>
@@ -67,6 +73,7 @@ function Contact() {
 							target="_blank"
 							rel="noreferrer"
 							aria-label="Twitter"
+                            
 						>
 							<span></span>
 							<span></span>
@@ -77,6 +84,7 @@ function Contact() {
 								<FontAwesomeIcon
 									icon={faTwitter}
 									className="fa fa-twitter"
+                                    size={isMobile ? 'xs' : null}
 								/>
 							</span>
 						</a>
@@ -99,6 +107,7 @@ function Contact() {
 								<FontAwesomeIcon
 									icon={faGithub}
 									className="fa fa-github"
+                                    size={isMobile ? 'xs' : null}
 								/>
 							</span>
 						</a>
@@ -121,6 +130,7 @@ function Contact() {
 								<FontAwesomeIcon
 									icon={faInstagram}
 									className="fa fa-instagram"
+                                    size={isMobile ? 'xs' : null}
 								/>
 							</span>
 						</a>

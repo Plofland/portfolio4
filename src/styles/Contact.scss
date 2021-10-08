@@ -4,13 +4,13 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-    border: 1px solid red;
+	// border: 1px solid red;
 
 	ul {
 		position: relative;
 		display: flex;
 		justify-content: space-evenly;
-        padding: 0;
+		padding: 0;
 	}
 
 	ul li {
@@ -18,7 +18,7 @@
 		list-style: none;
 		width: 4rem;
 		height: 4rem;
-		margin: 2.2rem 2.2rem;
+		margin: 2rem 2rem;
 	}
 
 	ul li span {
@@ -96,31 +96,34 @@
 	}
 }
 
-// //*Tablet Styling
-// @media (max-width: 850px) {
-// 	.contact {
-// 		.socialIcons {
-// 			ul {
-// 				flex-wrap: wrap;
-// 				margin-top: 2rem;
-// 			}
-// 			ul li {
-// 				margin: 1rem;
-// 			}
-// 			ul li span {
-// 				box-shadow: 1px 1px 1px 1px
-// 					rgba($primaryText, 0.1);
-// 			}
-// 		}
-// 	}
-// }
+//*Tablet Styling
+@media (max-width: 750px) {
+	.socialIcons {
+		ul {
+			flex-wrap: wrap;
+			margin: 0;
+		}
+		ul li {
+			width: 3rem;
+			height: 3rem;
+			margin: 1rem;
+		}
+		ul li span {
+			box-shadow: 1px 1px 1px 1px rgba($darkText, 0.1);
+		}
+	}
+}
 
-// //*Phone Styling
-// @media (max-width: 414px) {
-// 	.contact {
-// 		.socialIcons {
-// 			box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
-// 			padding: 2% 4%;
-// 		}
-// 	}
-// }
+//*Phone Styling
+@media (max-width: 414px) {
+	.socialIcons {
+		box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+		padding: 2% 4%;
+
+		// ul li {
+		// 	width: 2rem;
+		// 	height: 2rem;
+		// 	margin: 1rem;
+		// }
+	}
+}

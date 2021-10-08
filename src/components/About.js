@@ -32,17 +32,6 @@ export default function About() {
 								independently to find my own
 								solutions.
 							</p>
-							<p>
-								<u>Life outside of code:</u>
-								<p>
-									On my free time I love
-									cooking, camping,
-									hiking, backpacking,
-									photography or spending
-									the entire day at the
-									beach.
-								</p>
-							</p>
 						</div>
 					</Fade>
 					<Contact />

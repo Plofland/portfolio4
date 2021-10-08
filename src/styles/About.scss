@@ -2,6 +2,7 @@
 
 .about {
 	text-align: center;
+	border: 1px solid green;
 
 	.descriptionContactImage {
 		display: flex;
@@ -13,16 +14,19 @@
 			border: 1px solid green;
 
 			.selfDescription {
-                padding: 0 4rem;
+				padding: 0 8rem;
 				flex-direction: column;
 				border: 1px solid black;
 			}
 		}
 
 		img {
-			height: 500px;
+			height: 600px;
 			border-radius: 50px 20px;
-			border: 1rem solid transparent;
+			margin: 3rem;
+			// border: 1rem solid transparent;
+			// border: 2px solid black;
+			padding: 1rem;
 			background-image: linear-gradient(
 				45deg,
 				$midnightBlue,
@@ -30,6 +34,35 @@
 			);
 			background-origin: border-box;
 			background-clip: content-box, border-box;
+		}
+	}
+}
+
+//*Tablet Styling
+@media (max-width: 850px) {
+	.about{
+
+		.descriptionContactImage{
+			flex-direction: column;
+	
+			img{
+				height: 400px;
+				margin: 0;
+			}
+		}
+	}
+}
+
+//*Phone Styling
+@media (max-width: 414px) {
+	.about{
+		.descriptionContactImage{
+			.descriptionContact{
+				.selfDescription{
+					padding: 1rem;
+					font-size: x-small;
+				}
+			}
 		}
 	}
 }
