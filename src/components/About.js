@@ -2,11 +2,13 @@ import React from 'react';
 import selfBust from '../images/selfBustShot.jpg';
 import '../styles/About.scss';
 import Fade from 'react-reveal/Fade';
+import Contact from './Contact';
 
 export default function About() {
 	return (
 		<div className="about">
-			<div className="descriptionAndImage">
+			<div className="descriptionContactImage">
+				<div className="descriptionContact">
 					<Fade bottom cascade>
 						<div className="selfDescription">
 							<p>
@@ -30,23 +32,16 @@ export default function About() {
 								independently to find my own
 								solutions.
 							</p>
-							<p>
-								<u>Life outside of code:</u>
-								<p>
-									On my free time I love
-									cooking, camping,
-									hiking, backpacking,
-									photography or spending
-									the entire day at the
-									beach.
-								</p>
-							</p>
 						</div>
 					</Fade>
-				<img
-					src={selfBust}
-					alt="Peter Lofland bust shot"
-				/>
+					<Contact />
+				</div>
+				<div className="image">
+					<img
+						src={selfBust}
+						alt="Peter Lofland bust shot"
+					/>
+				</div>
 			</div>
 		</div>
 	);
