@@ -2,11 +2,13 @@ import React from 'react';
 import selfBust from '../images/selfBustShot.jpg';
 import '../styles/About.scss';
 import Fade from 'react-reveal/Fade';
+import Contact from './Contact';
 
 export default function About() {
 	return (
 		<div className="about">
-			<div className="descriptionAndImage">
+			<div className="descriptionContactImage">
+				<div className="descriptionContact">
 					<Fade bottom cascade>
 						<div className="selfDescription">
 							<p>
@@ -43,6 +45,9 @@ export default function About() {
 							</p>
 						</div>
 					</Fade>
+					<Contact />
+				</div>
+
 				<img
 					src={selfBust}
 					alt="Peter Lofland bust shot"
