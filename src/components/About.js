@@ -1,16 +1,16 @@
 import React from 'react';
 import selfBust from '../images/selfBustShot.jpg';
-import '../styles/About.scss';
 import Fade from 'react-reveal/Fade';
 import Contact from './Contact';
+import styled from 'styled-components';
 
 export default function About() {
 	return (
-		<div className="about">
-			<div className="descriptionContactImage">
-				<div className="descriptionContact">
+		<AboutSection>
+			<DescriptionContactImage>
+				<DescriptionContact>
 					<Fade bottom cascade>
-						<div className="selfDescription">
+						<SelfDescription>
 							<p>
 								I enjoy overcoming obstacles
 								and seeing a project from
@@ -32,17 +32,62 @@ export default function About() {
 								independently to find my own
 								solutions.
 							</p>
-						</div>
+						</SelfDescription>
 					</Fade>
 					<Contact />
-				</div>
-				<div className="image">
+				</DescriptionContact>
+				<Image className="image">
 					<img
 						src={selfBust}
 						alt="Peter Lofland bust shot"
 					/>
-				</div>
-			</div>
-		</div>
+				</Image>
+			</DescriptionContactImage>
+		</AboutSection>
 	);
 }
+
+const AboutSection = styled.div`
+	text-align: center;
+	border: 1px solid green;
+	height: 100vh;
+	font-size: larger;
+`;
+
+const DescriptionContactImage = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+`;
+
+const DescriptionContact = styled.div`
+	margin: 2rem;
+	flex-grow: 2;
+	border: 1px solid green;
+`;
+
+const SelfDescription = styled.div`
+	padding: 0 8rem;
+	flex-direction: column;
+	border: 1px solid black;
+`;
+
+const Image = styled.div`
+	height: 600px;
+	flex-grow: 1;
+	border: 3px solid white;
+	margin: 3rem;
+
+	img{
+		height: 100%;
+		border-radius: 50px 20px;
+		padding: 1rem;
+		background-image: linear-gradient(
+			45deg,
+			$midnightBlue,
+			$turquoise
+		);
+		background-origin: border-box;
+	}
+}
+`;
