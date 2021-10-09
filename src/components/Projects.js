@@ -9,7 +9,14 @@ export default function Projects() {
 		<ProjectsSection>
 			<h2>Projects</h2>
 			<Fade bottom cascade>
-				<ProjectsContainer>
+				{/* div with inline styling to fix Fade effect */}
+				<div
+					style={{
+						display: 'flex',
+						flexWrap: 'wrap',
+						justifyContent: 'center'
+					}}
+				>
 					{projectsList.map((project) => {
 						return (
 							<ProjectCard
@@ -18,7 +25,7 @@ export default function Projects() {
 							/>
 						);
 					})}
-				</ProjectsContainer>
+				</div>
 			</Fade>
 		</ProjectsSection>
 	);
@@ -31,8 +38,8 @@ const ProjectsSection = styled.div`
 	align-items: center;
 	height: 100%;
 `;
-const ProjectsContainer = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-`;
+// const ProjectsContainer = styled.div`
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: center;
+// `;
