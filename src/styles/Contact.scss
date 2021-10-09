@@ -32,7 +32,7 @@
 		display: flex !important;
 		align-items: center;
 		justify-content: center;
-		color: #fff;
+		color: $ivory;
 		font-size: 3rem;
 	}
 	@media (min-width: 1000px) {
@@ -48,7 +48,7 @@
 		ul li:hover span:nth-child(5) {
 			transition-delay: 0.2s;
 			transform: scale(1.2) rotate(45deg);
-			background-color: #fff;
+			background-color: $ivory;
 			border-radius: 1px;
 			opacity: 1;
 		}
