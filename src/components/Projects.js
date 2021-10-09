@@ -1,15 +1,15 @@
 import React from 'react';
 import projectsList from '../projectsList';
 import ProjectCard from './ProjectCard';
-import '../styles/Projects.scss';
 import Fade from 'react-reveal/Fade';
+import styled from 'styled-components';
 
 export default function Projects() {
 	return (
-		<div className="projectsSection">
+		<ProjectsSection>
 			<h2>Projects</h2>
 			<Fade bottom cascade>
-				<div className="projectsContainer">
+				<ProjectsContainer>
 					{projectsList.map((project) => {
 						return (
 							<ProjectCard
@@ -18,8 +18,21 @@ export default function Projects() {
 							/>
 						);
 					})}
-				</div>
+				</ProjectsContainer>
 			</Fade>
-		</div>
+		</ProjectsSection>
 	);
 }
+
+const ProjectsSection = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+`;
+const ProjectsContainer = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+`;
