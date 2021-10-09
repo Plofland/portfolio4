@@ -32,7 +32,7 @@ const App = () => (
 			'#282c34',
 			'#364355',
 			'#0798ec',
-			'#4E510F'
+			'#3A5953'
 		]}
 		onLeave={(origin, destination, direction) => {
 			console.log('onLeave event', {

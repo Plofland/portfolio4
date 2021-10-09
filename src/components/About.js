@@ -3,6 +3,7 @@ import selfBust from '../images/selfBustShot.jpg';
 import Fade from 'react-reveal/Fade';
 import Contact from './Contact';
 import styled from 'styled-components';
+import { colors } from '../styles/themes';
 
 export default function About() {
 	return (
@@ -76,7 +77,7 @@ const Image = styled.div`
 	height: 600px;
 	flex-grow: 1;
 	border: 3px solid white;
-	margin: 3rem;
+	margin: 3rem 3rem 3rem 0;
 
 	img{
 		height: 100%;
@@ -84,8 +85,8 @@ const Image = styled.div`
 		padding: 1rem;
 		background-image: linear-gradient(
 			45deg,
-			$midnightBlue,
-			$turquoise
+			${colors.midnightBlue},
+			${colors.turquoise}
 		);
 		background-origin: border-box;
 	}
