@@ -5,8 +5,8 @@ import { colors } from '../styles/themes';
 
 export default function Welcome() {
 	return (
-		<WelcomeSection className="welcome">
-			<HeaderWrapper id="headerHolder">
+		<WelcomeSection>
+			<HeaderWrapper>
 				<Header>Hello There</Header>
 			</HeaderWrapper>
 		</WelcomeSection>

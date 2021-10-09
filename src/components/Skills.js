@@ -1,13 +1,15 @@
 import React from 'react';
-import '../styles/Skills.scss';
 import Fade from 'react-reveal/Fade';
+import styled from 'styled-components';
+import wreckBeachRocks from '../images/wreckBeachRocks.jpeg';
+import { colors } from '../styles/themes';
 
 export default function Skills() {
 	return (
-		<div className="skills">
-			<div className="skillsList">
-				<div className="skillsSubSection">
-					<h3>Proficient</h3>
+		<SkillsSection>
+			<SkillGroups>
+				<Group className="skillsSubSection">
+					<GroupTitle>Proficient</GroupTitle>
 					<Fade bottom cascade>
 						<div>
 							<img
@@ -92,9 +94,9 @@ export default function Skills() {
 							/>
 						</div>
 					</Fade>
-				</div>
-				<div className="skillsSubSection">
-					<h3>Experienced</h3>
+				</Group>
+				<Group className="skillsSubSection">
+					<GroupTitle>Experienced</GroupTitle>
 					<Fade bottom cascade delay={400}>
 						<div>
 							<img
@@ -171,8 +173,53 @@ export default function Skills() {
 							/>
 						</div>
 					</Fade>
-				</div>
-			</div>
-		</div>
+				</Group>
+			</SkillGroups>
+		</SkillsSection>
 	);
 }
+
+const SkillsSection = styled.div`
+	background-image: url(${wreckBeachRocks});
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+`;
+
+const SkillGroups = styled.div`
+	padding: 2%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex-grow: 1;
+	border: 3px solid black;
+	align-items: center;
+	text-align: center;
+`;
+
+const Group = styled.div`
+	padding: 2%;
+	background-color: ${colors.transMidnightBlue};
+
+	img {
+		height: 30px;
+		margin: 0 5px;
+	}
+`;
+
+const GroupTitle = styled.h3`
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	width: 60%;
+	background: linear-gradient(
+		to left,
+		transparent,
+		${colors.darkText},
+		transparent 100%
+	);
+	background-position: 0 100%;
+	background-size: 100% 2px;
+	background-repeat: repeat-x;
+`;
