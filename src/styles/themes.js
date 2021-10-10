@@ -13,13 +13,12 @@ export const mq = facepaint(
 );
 
 export const colors = {
-	forrestGreen: '#3A5953',
+	mineralGreen: '#3A5953',
 	midnightBlue: '#172c4a',
 	ivory: '#E0DDE1',
 	cyanBlue: '#3A5673',
 	transCyanBlue: '#3A5673ba',
 	turquoise: '#51B9CD',
 	darkText: '#222222',
-	lightText: '#E7FEFE',
-	rockPool: '#364355'
+	oxfordBlue: '#364355'
 };

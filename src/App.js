@@ -7,9 +7,10 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Welcome from './components/Welcome';
+import About from './components/About';
 
 import './styles/App.scss';
-import About from './components/About';
+import {colors} from './styles/themes'
 
 class MySection extends React.Component {
 	render() {
@@ -29,10 +30,10 @@ const App = () => (
 		navigation
 		navigationTooltips={anchors}
 		sectionsColor={[
-			'#282c34',
-			'#364355',
-			'#0798ec',
-			'#3A5953'
+			`${colors.cyanBlue}`,
+			`${colors.oxfordBlue}`,
+			`${colors.cyanBlue}`,
+			`${colors.mineralGreen}`
 		]}
 		onLeave={(origin, destination, direction) => {
 			console.log('onLeave event', {
