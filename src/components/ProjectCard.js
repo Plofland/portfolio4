@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useMediaQuery } from 'react-responsive';
 import styled from 'styled-components';
 
 export default function ProjectCard(props) {
@@ -49,7 +48,6 @@ const ProjectTitle = styled.h4`
 	display: flex;
 	flex-grow: 1;
 	margin: 0;
-	color: black;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
