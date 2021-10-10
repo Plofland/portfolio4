@@ -27,6 +27,6 @@ const HeaderWrapper = styled.div`
 	padding-top: 65vh;
 `;
 const Header = styled.h2`
-	background-color: ${colors.transMidnightBlue};
+	background-color: ${colors.transCyanBlue};
 	padding: 1rem;
 `;
