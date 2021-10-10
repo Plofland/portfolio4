@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mq } from '../styles/themes';
 
 export default function ProjectCard(props) {
 	const { projectName, hrefLink, imgSrc, imgAlt } =
@@ -25,7 +26,8 @@ const ProjectTile = styled.a`
 	flex-direction: column;
 	border-radius: 5px;
 	text-decoration: none;
-	width: 300px;
+	${mq({ width: ['150px', '250px', '300px'] })};
+
 	margin: 1rem;
 
 	&:hover {
@@ -53,7 +55,9 @@ const ProjectTitle = styled.h4`
 	align-items: center;
 	padding: 1rem;
 	z-index: 1;
+	
 	transform: translateY(-3rem);
+	${mq({ transform: ['none', 'translateY(-3rem)', 'translateY(-3rem)'] })};
 	transition: ease-in-out 0.4s;
 `;
 
