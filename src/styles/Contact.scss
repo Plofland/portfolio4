@@ -97,22 +97,22 @@
 }
 
 //*Tablet Styling
-@media (max-width: 750px) {
+@media (max-width: 1025px) {
 	.socialIcons {
 		ul {
 			flex-wrap: wrap;
-			margin: 0;
+			align-items: center;
 		}
 		ul li {
 			width: 3rem;
 			height: 3rem;
-			margin: 0;
+			margin: 1rem;
 		}
 	}
 }
 
 //*Phone Styling
-@media (max-width: 414px) {
+@media (max-width: 750px) {
 	.socialIcons {
 
 		ul li {
