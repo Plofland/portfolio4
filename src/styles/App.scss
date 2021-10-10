@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-@import './colorPalette';
 
 *,
 *::after,
@@ -46,7 +45,7 @@ h4 {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-	background: $ivory;
+	background: ivory;
 }
 
 button {

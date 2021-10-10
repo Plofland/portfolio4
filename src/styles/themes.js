@@ -20,5 +20,6 @@ export const colors = {
 	transCyanBlue: '#3A5673ba',
 	turquoise: '#51B9CD',
 	darkText: '#222222',
+	transDarkText: '#22222222',
 	oxfordBlue: '#364355'
 };
