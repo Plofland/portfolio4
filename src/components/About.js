@@ -82,7 +82,7 @@ const Image = styled.div`
 	height: 600px;
 	flex-grow: 1;
 	// border: 3px solid white;
-	margin: 3rem 3rem 3rem 0;
+	margin: 3rem 6rem 3rem 0;
 
 	img {
 		height: 100%;
