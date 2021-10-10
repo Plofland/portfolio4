@@ -94,6 +94,6 @@ const Image = styled.div`
 			${colors.turquoise}
 		);
 		background-origin: border-box;
-		box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 2px;
+		box-shadow: rgba(0, 0, 0, 0.45) 1px 1px 2px;
 	}
 `;

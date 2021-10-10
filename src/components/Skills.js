@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 import wreckBeachRocks from '../images/wreckBeachRocks.jpeg';
-import { colors } from '../styles/themes';
+import { colors, mq } from '../styles/themes';
 
 export default function Skills() {
 	return (
@@ -203,7 +203,8 @@ const Group = styled.div`
 	background-color: ${colors.transMidnightBlue};
 
 	img {
-		height: 30px;
+		// height: 30px;
+		${mq({ height: ['25px', '30px', '35px'] })};
 		margin: 0 5px;
 	}
 `;
@@ -211,6 +212,7 @@ const Group = styled.div`
 const GroupTitle = styled.h3`
 	text-align: center;
 	margin: 0 auto;
+	padding-bottom: 1rem;
 	margin-bottom: 1rem;
 	width: 60%;
 	background: linear-gradient(
