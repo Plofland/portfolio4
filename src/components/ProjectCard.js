@@ -27,8 +27,8 @@ const ProjectTile = styled.a`
 	border-radius: 5px;
 	text-decoration: none;
 	${mq({ width: ['150px', '250px', '300px'] })};
-
-	margin: 1rem;
+	margin: 0 1rem;
+	// border: 1px solid white;
 
 	&:hover {
 		h4{

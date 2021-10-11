@@ -36,10 +36,11 @@ const ProjectsSection = styled.div`
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	height: 100%;
+	height: 100vh;
+	// border: 2px solid black;
+
+	h2{
+		margin: 1rem 0;
+	}
 `;
-// const ProjectsContainer = styled.div`
-// 	display: flex;
-// 	flex-wrap: wrap;
-// 	justify-content: center;
-// `;
+

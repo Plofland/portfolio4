@@ -50,7 +50,7 @@ export default function About() {
 
 const AboutSection = styled.div`
 	text-align: center;
-	border: 1px solid green;
+	// border: 1px solid green;
 	height: 100vh;
 	display: flex;
 	${mq({ flexDirection: ['column', 'column', 'row'] })};
@@ -62,13 +62,13 @@ const AboutSection = styled.div`
 const DescriptionContact = styled.div`
 	${mq({ margin: ['1rem 0', '0 2rem', '2rem'] })};
 	${mq({ flexGrow: ['1', '1', '2'] })};
-	border: 1px solid green;
+	// border: 1px solid green;
 `;
 
 const SelfDescription = styled.div`
 	${mq({ padding: ['1rem 0', '2rem 0', '0 8rem'] })};
 	flex-direction: column;
-	border: 1px solid black;
+	// border: 1px solid black;
 	p{
 		padding: 1rem;
 	}
@@ -77,7 +77,7 @@ const SelfDescription = styled.div`
 const Image = styled.div`
 	${mq({ height: ['200px', '400px', '600px'] })};
 	flex-grow: 1;
-	border: 3px solid white;
+	// border: 3px solid white;
 	${mq({ margin: ['2rem', '0 0 2rem 0', '3rem 6rem 3rem 0'] })};
 
 	img {

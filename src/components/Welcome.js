@@ -7,7 +7,13 @@ export default function Welcome() {
 	return (
 		<WelcomeSection>
 			<HeaderWrapper>
-				<Header>Hello There</Header>
+				<Header>
+					<h2>Hello there, I'm Peter</h2>
+					<p>
+						& I'm a full stack software
+						developer
+					</p>
+				</Header>
 			</HeaderWrapper>
 		</WelcomeSection>
 	);
@@ -24,9 +30,13 @@ const WelcomeSection = styled.div`
 	justify-content: center;
 `;
 const HeaderWrapper = styled.div`
-	padding-top: 65vh;
+	padding-top: 62vh;
 `;
-const Header = styled.h2`
+const Header = styled.div`
 	background-color: ${colors.transCyanBlue};
 	padding: 1rem;
+
+	p{
+		margin: 1rem 0 0 0;
+	}
 `;
