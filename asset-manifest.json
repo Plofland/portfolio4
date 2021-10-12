@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91e1a1c9.chunk.css",
+    "main.js": "/static/js/main.ec96eb2c.chunk.js",
+    "main.js.map": "/static/js/main.ec96eb2c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9496b37a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9496b37a.js.map",
+    "static/js/2.835538d3.chunk.js": "/static/js/2.835538d3.chunk.js",
+    "static/js/2.835538d3.chunk.js.map": "/static/js/2.835538d3.chunk.js.map",
+    "static/js/3.759b3690.chunk.js": "/static/js/3.759b3690.chunk.js",
+    "static/js/3.759b3690.chunk.js.map": "/static/js/3.759b3690.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.91e1a1c9.chunk.css.map": "/static/css/main.91e1a1c9.chunk.css.map",
+    "static/js/2.835538d3.chunk.js.LICENSE.txt": "/static/js/2.835538d3.chunk.js.LICENSE.txt",
+    "static/media/7ayatiCafe.927c5e52.png": "/static/media/7ayatiCafe.927c5e52.png",
+    "static/media/LAN.1f43cff6.jpg": "/static/media/LAN.1f43cff6.jpg",
+    "static/media/co-make.94719032.png": "/static/media/co-make.94719032.png",
+    "static/media/nextJSTwitterClone.a21284b0.png": "/static/media/nextJSTwitterClone.a21284b0.png",
+    "static/media/selfBustShot.5abbeae1.jpg": "/static/media/selfBustShot.5abbeae1.jpg",
+    "static/media/wreckBeach.8270ea9e.jpeg": "/static/media/wreckBeach.8270ea9e.jpeg",
+    "static/media/wreckBeachRocks.ca36cf9c.jpeg": "/static/media/wreckBeachRocks.ca36cf9c.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9496b37a.js",
+    "static/js/2.835538d3.chunk.js",
+    "static/css/main.91e1a1c9.chunk.css",
+    "static/js/main.ec96eb2c.chunk.js"
+  ]
+}
