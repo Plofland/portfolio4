@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import wreckBeach from '../images/wreckBeach.jpeg';
+import wreckBeach from '../images/wreckBeach.jpg';
 import { colors, mq } from '../styles/themes';
 
 export default function Welcome() {
