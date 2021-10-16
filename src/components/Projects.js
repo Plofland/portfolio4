@@ -13,12 +13,13 @@ export default function Projects() {
 			<Fade bottom cascade>
 				{/* div with inline styling to fix Fade effect */}
 				<div
-					style={{
-						display: 'flex',
-						flexWrap: 'wrap',
-						justifyContent: 'center',
-						height: '80%'
-					}}
+				style={{
+					display: 'flex',
+					flexWrap: 'wrap',
+					justifyContent: 'center',
+					alignContent: 'center',
+					height: '80%'
+				}}
 				>
 					{projectsList.map((project) => {
 						return (
