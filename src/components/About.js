@@ -75,7 +75,7 @@ const SelfDescription = styled.div`
 `;
 
 const Image = styled.div`
-	${mq({ height: ['300px', '400px', '600px'] })};
+	${mq({ height: ['50%', '50%', '80%'] })};
 	${mq({ flexGrow: ['2', '1', '1'] })};
 	// border: 1px solid white;
 	${mq({

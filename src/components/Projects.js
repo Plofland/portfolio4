@@ -7,15 +7,19 @@ import styled from 'styled-components';
 export default function Projects() {
 	return (
 		<ProjectsSection>
-			<h3>Projects</h3>
+			<ProjectSectionTitle>
+				Projects
+			</ProjectSectionTitle>
 			<Fade bottom cascade>
 				{/* div with inline styling to fix Fade effect */}
 				<div
-					style={{
-						display: 'flex',
-						flexWrap: 'wrap',
-						justifyContent: 'center'
-					}}
+				style={{
+					display: 'flex',
+					flexWrap: 'wrap',
+					justifyContent: 'center',
+					alignContent: 'center',
+					height: '80%'
+				}}
 				>
 					{projectsList.map((project) => {
 						return (
@@ -40,3 +44,8 @@ const ProjectsSection = styled.div`
 	// border: 2px solid black;
 `;
 
+const ProjectSectionTitle = styled.h3`
+	height: 20%;
+	display: flex;
+	align-items: center;
+`;
