@@ -193,11 +193,11 @@ const SkillsSection = styled.div`
 `;
 
 const Group = styled.div`
-	padding: 2%;
+	${mq({ padding: ['1%', '2%', '3%'] })};
 	background-color: ${colors.transCyanBlue};
 
 	img {
-		${mq({ height: ['25px', '30px', '35px'] })};
+		${mq({ height: ['20px', '30px', '35px'] })};
 		margin: 0 5px;
 	}
 `;
