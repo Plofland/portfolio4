@@ -178,10 +178,6 @@ export default function Skills() {
 }
 
 const SkillsSection = styled.div`
-	background-image: url(${wreckBeachRocks});
-	background-position: top center;
-	background-attachment: fixed;
-	background-size: cover;
 	padding: 1rem 3rem;
 	height: 100vh;
 	display: flex;
@@ -190,6 +186,12 @@ const SkillsSection = styled.div`
 	flex-grow: 1;
 	align-items: center;
 	text-align: center;
+	background-image: url(${wreckBeachRocks});
+	background-position: top center;
+	background-attachment: local;
+	//!get this fixed attachment working
+	// background-attachment: fixed;
+	background-size: cover;
 `;
 
 const Group = styled.div`
