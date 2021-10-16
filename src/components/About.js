@@ -38,7 +38,7 @@ export default function About() {
 				</SelfDescription>
 				<Contact />
 			</DescriptionContact>
-			<Image className="image">
+			<Image>
 				<img
 					src={selfBust}
 					alt="Peter Lofland bust shot"
@@ -60,30 +60,36 @@ const AboutSection = styled.div`
 `;
 
 const DescriptionContact = styled.div`
-	${mq({ margin: ['1rem 0', '0 2rem', '2rem'] })};
+	${mq({ margin: ['1rem 0 0 0', '0 2rem', '2rem'] })};
 	${mq({ flexGrow: ['1', '1', '2'] })};
 	// border: 1px solid green;
 `;
 
 const SelfDescription = styled.div`
-	${mq({ padding: ['1rem 0', '2rem 0', '0 8rem'] })};
+	${mq({ padding: ['0', '2rem 0', '0 8rem'] })};
 	flex-direction: column;
 	// border: 1px solid black;
-	p{
+	p {
 		padding: 1rem;
 	}
 `;
 
 const Image = styled.div`
-	${mq({ height: ['200px', '400px', '600px'] })};
-	flex-grow: 1;
-	// border: 3px solid white;
-	${mq({ margin: ['2rem', '0 0 2rem 0', '3rem 6rem 3rem 0'] })};
+	${mq({ height: ['300px', '400px', '600px'] })};
+	${mq({ flexGrow: ['2', '1', '1'] })};
+	// border: 1px solid white;
+	${mq({
+		margin: [
+			'0 0 1rem 0',
+			'0 0 2rem 0',
+			'3rem 6rem 3rem 0'
+		]
+	})};
 
 	img {
 		height: 100%;
 		border-radius: 50px 20px;
-		padding: 1rem;
+		${mq({ padding: ['0.25rem', '0.5rem', '1rem'] })};
 		background-image: linear-gradient(
 			45deg,
 			${colors.midnightBlue},

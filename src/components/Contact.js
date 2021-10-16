@@ -20,145 +20,147 @@ function Contact() {
 	});
 	return (
 		<ContactSection>
-			<Fade bottom cascade delay={400}>
-				<SocialIcons>
-					<Icon>
-						<a
-							href={
-								'https://mail.google.com/mail/?view=cm&fs=1&to=ploflan@gmail.com&su=SUBJECT&body=BODY'
-							}
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Gmail"
-						>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal>
-								<FontAwesomeIcon
-									icon={faEnvelope}
-									className="fa fa-envelope"
-									size={
-										isTablet
-											? 'xs'
-											: null
-									}
-								/>
-							</IconPedal>
-						</a>
-					</Icon>
-					<Icon>
-						<a
-							href={
-								'https://www.linkedin.com/in/peter-lofland/'
-							}
-							target="_blank"
-							rel="noreferrer"
-							aria-label="LinkedIn"
-						>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal>
-								<FontAwesomeIcon
-									icon={faLinkedin}
-									className="fa fa-linkedin"
-									size={
-										isTablet
-											? 'xs'
-											: null
-									}
-								/>
-							</IconPedal>
-						</a>
-					</Icon>
-					<Icon>
-						<a
-							href={
-								'https://twitter.com/PeterLofland'
-							}
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Twitter"
-						>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="fa fa-twitter"
-									size={
-										isTablet
-											? 'xs'
-											: null
-									}
-								/>
-							</IconPedal>
-						</a>
-					</Icon>
-					<Icon>
-						<a
-							href={
-								'https://github.com/Plofland'
-							}
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Github"
-						>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="fa fa-github"
-									size={
-										isTablet
-											? 'xs'
-											: null
-									}
-								/>
-							</IconPedal>
-						</a>
-					</Icon>
-					<Icon>
-						<a
-							href={
-								'https://www.instagram.com/peterlofland/'
-							}
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Instagram"
-						>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal></IconPedal>
-							<IconPedal>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="fa fa-instagram"
-									size={
-										isTablet
-											? 'xs'
-											: null
-									}
-								/>
-							</IconPedal>
-						</a>
-					</Icon>
-				</SocialIcons>
-			</Fade>
+			<SocialIcons>
+				<Fade bottom cascade delay={400}>
+					<div style={{display: 'flex'}}>
+						<Icon>
+							<a
+								href={
+									'https://mail.google.com/mail/?view=cm&fs=1&to=ploflan@gmail.com&su=SUBJECT&body=BODY'
+								}
+								target="_blank"
+								rel="noreferrer"
+								aria-label="Gmail"
+							>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal>
+									<FontAwesomeIcon
+										icon={faEnvelope}
+										className="fa fa-envelope"
+										size={
+											isTablet
+												? 'xs'
+												: null
+										}
+									/>
+								</IconPedal>
+							</a>
+						</Icon>
+						<Icon>
+							<a
+								href={
+									'https://www.linkedin.com/in/peter-lofland/'
+								}
+								target="_blank"
+								rel="noreferrer"
+								aria-label="LinkedIn"
+							>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal>
+									<FontAwesomeIcon
+										icon={faLinkedin}
+										className="fa fa-linkedin"
+										size={
+											isTablet
+												? 'xs'
+												: null
+										}
+									/>
+								</IconPedal>
+							</a>
+						</Icon>
+						<Icon>
+							<a
+								href={
+									'https://twitter.com/PeterLofland'
+								}
+								target="_blank"
+								rel="noreferrer"
+								aria-label="Twitter"
+							>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal>
+									<FontAwesomeIcon
+										icon={faTwitter}
+										className="fa fa-twitter"
+										size={
+											isTablet
+												? 'xs'
+												: null
+										}
+									/>
+								</IconPedal>
+							</a>
+						</Icon>
+						<Icon>
+							<a
+								href={
+									'https://github.com/Plofland'
+								}
+								target="_blank"
+								rel="noreferrer"
+								aria-label="Github"
+							>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal>
+									<FontAwesomeIcon
+										icon={faGithub}
+										className="fa fa-github"
+										size={
+											isTablet
+												? 'xs'
+												: null
+										}
+									/>
+								</IconPedal>
+							</a>
+						</Icon>
+						<Icon>
+							<a
+								href={
+									'https://www.instagram.com/peterlofland/'
+								}
+								target="_blank"
+								rel="noreferrer"
+								aria-label="Instagram"
+							>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal></IconPedal>
+								<IconPedal>
+									<FontAwesomeIcon
+										icon={faInstagram}
+										className="fa fa-instagram"
+										size={
+											isTablet
+												? 'xs'
+												: null
+										}
+									/>
+								</IconPedal>
+							</a>
+						</Icon>
+					</div>
+				</Fade>
+			</SocialIcons>
 		</ContactSection>
 	);
 }
@@ -167,8 +169,8 @@ export default Contact;
 
 const ContactSection = styled.div`
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
+	flex-direction: row;
 `;
 
 const SocialIcons = styled.ul`

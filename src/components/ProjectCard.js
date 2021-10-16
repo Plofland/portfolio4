@@ -26,7 +26,7 @@ const ProjectTile = styled.a`
 	flex-direction: column;
 	border-radius: 5px;
 	text-decoration: none;
-	${mq({ width: ['150px', '250px', '300px'] })};
+	${mq({ width: ['120px', '200px', '300px'] })};
 	margin: 0 1rem;
 	// border: 1px solid white;
 
@@ -57,7 +57,7 @@ const ProjectTitle = styled.h4`
 	z-index: 1;
 	
 	transform: translateY(-3rem);
-	${mq({ transform: ['none', 'translateY(-3rem)', 'translateY(-3rem)'] })};
+	${mq({ transform: ['none', 'translateY(-4rem)', 'translateY(-4rem)'] })};
 	transition: ease-in-out 0.4s;
 `;
 
