@@ -7,7 +7,7 @@ import styled from 'styled-components';
 export default function Projects() {
 	return (
 		<ProjectsSection>
-			<h2>Projects</h2>
+			<h3>Projects</h3>
 			<Fade bottom cascade>
 				{/* div with inline styling to fix Fade effect */}
 				<div
@@ -38,9 +38,5 @@ const ProjectsSection = styled.div`
 	align-items: center;
 	height: 100vh;
 	// border: 2px solid black;
-
-	h2{
-		margin: 1rem 0;
-	}
 `;
 
