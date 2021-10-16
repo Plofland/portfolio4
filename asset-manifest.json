@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.91e1a1c9.chunk.css",
-    "main.js": "/static/js/main.f22c317f.chunk.js",
-    "main.js.map": "/static/js/main.f22c317f.chunk.js.map",
+    "main.js": "/static/js/main.2aaed515.chunk.js",
+    "main.js.map": "/static/js/main.2aaed515.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9496b37a.js",
     "runtime-main.js.map": "/static/js/runtime-main.9496b37a.js.map",
     "static/js/2.835538d3.chunk.js": "/static/js/2.835538d3.chunk.js",
@@ -17,13 +17,13 @@
     "static/media/co-make.94719032.png": "/static/media/co-make.94719032.png",
     "static/media/nextJSTwitterClone.a21284b0.png": "/static/media/nextJSTwitterClone.a21284b0.png",
     "static/media/selfBustShot.5abbeae1.jpg": "/static/media/selfBustShot.5abbeae1.jpg",
-    "static/media/wreckBeach.7b88bd70.jpeg": "/static/media/wreckBeach.7b88bd70.jpeg",
-    "static/media/wreckBeachRocks.59294e8b.jpeg": "/static/media/wreckBeachRocks.59294e8b.jpeg"
+    "static/media/wreckBeach.4693c4f3.jpg": "/static/media/wreckBeach.4693c4f3.jpg",
+    "static/media/wreckBeachRocks.4b63d274.jpeg": "/static/media/wreckBeachRocks.4b63d274.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.9496b37a.js",
     "static/js/2.835538d3.chunk.js",
     "static/css/main.91e1a1c9.chunk.css",
-    "static/js/main.f22c317f.chunk.js"
+    "static/js/main.2aaed515.chunk.js"
   ]
 }
