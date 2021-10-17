@@ -7,7 +7,7 @@ import { colors, mq } from '../styles/themes';
 export default function Skills() {
 	return (
 		<SkillsSection>
-			<Group className="skillsSubSection">
+			<Group>
 				<GroupTitle>Proficient</GroupTitle>
 				<Fade bottom cascade>
 					<div>
@@ -94,7 +94,7 @@ export default function Skills() {
 					</div>
 				</Fade>
 			</Group>
-			<Group className="skillsSubSection">
+			<Group>
 				<GroupTitle>Experienced</GroupTitle>
 				<Fade bottom cascade delay={400}>
 					<div>
@@ -178,7 +178,7 @@ export default function Skills() {
 }
 
 const SkillsSection = styled.div`
-	padding: 1rem 3rem;
+	${mq({ padding: ['1%', '2%', '1rem 3rem'] })};
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
