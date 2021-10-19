@@ -68,7 +68,7 @@ const DescriptionContact = styled.div`
 const SelfDescription = styled.div`
 	${mq({ padding: ['0', '2rem 0', '0 8rem'] })};
 	flex-direction: column;
-	// border: 1px solid black;
+	border: 1px solid black;
 	p {
 		padding: 1rem;
 	}
@@ -77,7 +77,7 @@ const SelfDescription = styled.div`
 const Image = styled.div`
 	${mq({ height: ['50%', '50%', '80%'] })};
 	${mq({ flexGrow: ['2', '1', '1'] })};
-	// border: 1px solid white;
+	border: 1px solid white;
 	${mq({
 		margin: [
 			'0 0 1rem 0',

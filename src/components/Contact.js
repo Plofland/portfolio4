@@ -22,7 +22,7 @@ function Contact() {
 		<ContactSection>
 			<SocialIcons>
 				<Fade bottom cascade delay={400}>
-					<div style={{display: 'flex'}}>
+					<div style={{ display: 'flex' }}>
 						<Icon>
 							<a
 								href={
@@ -38,14 +38,9 @@ function Contact() {
 								<IconPedal></IconPedal>
 								<IconPedal></IconPedal>
 								<IconPedal>
-									<FontAwesomeIcon
+									<StyledIcon
 										icon={faEnvelope}
 										className="fa fa-envelope"
-										size={
-											isTablet
-												? 'xs'
-												: null
-										}
 									/>
 								</IconPedal>
 							</a>
@@ -65,14 +60,9 @@ function Contact() {
 								<IconPedal></IconPedal>
 								<IconPedal></IconPedal>
 								<IconPedal>
-									<FontAwesomeIcon
+									<StyledIcon
 										icon={faLinkedin}
 										className="fa fa-linkedin"
-										size={
-											isTablet
-												? 'xs'
-												: null
-										}
 									/>
 								</IconPedal>
 							</a>
@@ -92,14 +82,9 @@ function Contact() {
 								<IconPedal></IconPedal>
 								<IconPedal></IconPedal>
 								<IconPedal>
-									<FontAwesomeIcon
+									<StyledIcon
 										icon={faTwitter}
 										className="fa fa-twitter"
-										size={
-											isTablet
-												? 'xs'
-												: null
-										}
 									/>
 								</IconPedal>
 							</a>
@@ -119,14 +104,9 @@ function Contact() {
 								<IconPedal></IconPedal>
 								<IconPedal></IconPedal>
 								<IconPedal>
-									<FontAwesomeIcon
+									<StyledIcon
 										icon={faGithub}
 										className="fa fa-github"
-										size={
-											isTablet
-												? 'xs'
-												: null
-										}
 									/>
 								</IconPedal>
 							</a>
@@ -146,14 +126,9 @@ function Contact() {
 								<IconPedal></IconPedal>
 								<IconPedal></IconPedal>
 								<IconPedal>
-									<FontAwesomeIcon
+									<StyledIcon
 										icon={faInstagram}
 										className="fa fa-instagram"
-										size={
-											isTablet
-												? 'xs'
-												: null
-										}
 									/>
 								</IconPedal>
 							</a>
@@ -171,13 +146,15 @@ const ContactSection = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
+	border: 1px solid yellow;
+	height: 20%;
+	// flex-grow: 1;
 `;
 
 const SocialIcons = styled.ul`
 	position: relative;
 	display: flex;
 	justify-content: space-evenly;
-	padding: 0;
 
 	li:nth-child(1) span {
 		background: #de5246;
@@ -198,8 +175,9 @@ const SocialIcons = styled.ul`
 const Icon = styled.li`
 	position: relative;
 	list-style: none;
-	${mq({ width: ['3rem', '3rem', '4rem'] })};
-	aspect-ratio: 1/1;
+
+	// ${mq({ width: ['1.5rem', '3rem', '4rem'] })};
+	// aspect-ratio: 1;
 	${mq({
 		margin: ['.25rem .5rem', '1rem', '2rem 2rem']
 	})};
@@ -248,14 +226,20 @@ const IconPedal = styled.span`
 	border-radius: 10px;
 	position: absolute;
 	box-shadow: 1px 1px 2px ${colors.transDarkText};
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	// top: 0;
+	// left: 0;
+	// width: 100%;
+	// height: 100%;
+	${mq({ width: ['1.5rem', '3rem', '4rem'] })};
+	aspect-ratio: 1;
 	transition: 0.5s;
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
 	color: ${colors.ivory};
-	font-size: 3rem;
+	// font-size: 3rem;
+`;
+
+const StyledIcon = styled(FontAwesomeIcon)`
+	${mq({ fontSize: ['1rem', '2rem', '3rem'] })};
 `;

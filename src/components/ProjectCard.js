@@ -26,14 +26,18 @@ const ProjectTile = styled.a`
 	flex-direction: column;
 	border-radius: 5px;
 	text-decoration: none;
-	${mq({ width: ['120px', '200px', '300px'] })};
-	margin: 0 1rem;
+	${mq({ width: ['130px', '200px', '300px'] })};
+	margin: 1rem;
 	// border: 1px solid white;
 
 	&:hover {
 		h4{
 			transform: translateY(0);
 		}
+	}
+
+@media (max-width: 280px){
+		width: 110px;
 	}
 `;
 

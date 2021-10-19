@@ -16,7 +16,7 @@ export default function Projects() {
 				style={{
 					display: 'flex',
 					flexWrap: 'wrap',
-					justifyContent: 'center',
+					justifyContent: 'space-evenly',
 					alignContent: 'center',
 					height: '80%'
 				}}
@@ -44,8 +44,8 @@ const ProjectsSection = styled.div`
 	// border: 2px solid black;
 `;
 
-const ProjectSectionTitle = styled.h3`
-	height: 20%;
+const ProjectSectionTitle = styled.h2`
+	height: 15vh;
 	display: flex;
 	align-items: center;
 `;
