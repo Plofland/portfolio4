@@ -64,14 +64,3 @@ const ProjectTitle = styled.h4`
 	${mq({ transform: ['none', 'translateY(-4rem)', 'translateY(-4rem)'] })};
 	transition: ease-in-out 0.4s;
 `;
-
-// const TextOverlay = styled.div`
-// 	position: absolute;
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: space-evenly;
-// 	background: rgba(0, 0, 0, 0.8);
-// 	height: 100%;
-// 	text-align: center;
-// 	opacity: 0;
-// `;
