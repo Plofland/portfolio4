@@ -1,7 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
-import { useMediaQuery } from 'react-responsive';
 import { colors, mq } from '../styles/themes';
 
 //Icons
@@ -15,9 +14,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
-	const isTablet = useMediaQuery({
-		query: '(max-width: 1024px)'
-	});
 	return (
 		<ContactSection>
 			<SocialIcons>
@@ -176,7 +172,6 @@ const SocialIcons = styled.ul`
 const Icon = styled.li`
 	position: relative;
 	list-style: none;
-
 	${mq({
 		margin: ['.25rem .5rem', '1rem', '2rem 2rem']
 	})};
@@ -224,13 +219,14 @@ const Icon = styled.li`
 		}
 	}
 `;
+
 const IconPedal = styled.span`
 	${mq({ borderRadius: ['5px', '10px', '10px'] })};
 	position: absolute;
 	box-shadow: 1px 1px 2px ${colors.transDarkText};
 	width: 100%;
 	aspect-ratio: 1;
-	transition: 0.5s;
+	transition: 0.25s;
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
