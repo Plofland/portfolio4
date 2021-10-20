@@ -146,15 +146,15 @@ const ContactSection = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
-	border: 1px solid yellow;
+	// border: 1px solid yellow;
 	height: 20%;
-	// flex-grow: 1;
 `;
 
 const SocialIcons = styled.ul`
 	position: relative;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 
 	li:nth-child(1) span {
 		background: #de5246;
@@ -172,15 +172,17 @@ const SocialIcons = styled.ul`
 		background: #3f729b;
 	}
 `;
+
 const Icon = styled.li`
 	position: relative;
 	list-style: none;
 
-	// ${mq({ width: ['1.5rem', '3rem', '4rem'] })};
-	// aspect-ratio: 1;
 	${mq({
 		margin: ['.25rem .5rem', '1rem', '2rem 2rem']
 	})};
+	${mq({ width: ['1.5rem', '3rem', '4rem'] })};
+	aspect-ratio: 1;
+
 
 	&:hover span:nth-child(6) {
 		transform: scale(1.2);
@@ -223,21 +225,16 @@ const Icon = styled.li`
 	}
 `;
 const IconPedal = styled.span`
-	border-radius: 10px;
+	${mq({ borderRadius: ['5px', '10px', '10px'] })};
 	position: absolute;
 	box-shadow: 1px 1px 2px ${colors.transDarkText};
-	// top: 0;
-	// left: 0;
-	// width: 100%;
-	// height: 100%;
-	${mq({ width: ['1.5rem', '3rem', '4rem'] })};
+	width: 100%;
 	aspect-ratio: 1;
 	transition: 0.5s;
 	display: flex !important;
 	align-items: center;
 	justify-content: center;
 	color: ${colors.ivory};
-	// font-size: 3rem;
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
