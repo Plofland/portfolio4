@@ -8,7 +8,7 @@ export default function Projects() {
 	return (
 		<ProjectsSection>
 			<ProjectSectionTitle>
-				Projects
+				Works
 			</ProjectSectionTitle>
 			<Fade bottom cascade>
 				{/* div with inline styling to fix Fade effect */}
