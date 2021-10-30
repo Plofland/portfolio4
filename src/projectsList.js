@@ -28,14 +28,14 @@ const projectsList = [
     imgSrc: coMake,
     imgAlt: 'Co-Make project'
   },
-  // {
-  //   id: 3,
-  //   projectName: 'Twitter Clone',
-  //   hrefLink: 'https://nextjs-twitter-clone.netlify.app/',
-  //   description: 'Twitter mobile clone made with NextJS & Tailwind',
-  //   imgSrc: twitterClone,
-  //   imgAlt: 'Twitter Clone project'
-  // },
+  {
+    id: 3,
+    projectName: 'Twitter Clone',
+    hrefLink: 'https://nextjs-twitter-clone.netlify.app/',
+    description: 'Twitter mobile clone made with NextJS & Tailwind',
+    imgSrc: twitterClone,
+    imgAlt: 'Twitter Clone project'
+  },
 ];
 
 export default projectsList;
