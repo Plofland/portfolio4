@@ -55,22 +55,20 @@ export default function Projects() {
 const ProjectsSection = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	height: 100vh;
-	border: 2px solid black;
 `;
 
 const ProjectSectionTitle = styled.h2`
-	height: 15vh;
-	border: 2px solid black;
+	// border: 2px solid black;
+	${mq({ height: ['25vh', '15vh', '15vh'] })};
 	display: flex;
 	align-items: center;
 `;
 
 const CarouselContainer = styled.div`
-	border: 1px solid white;
+	// border: 1px solid white;
 	${mq({ width: ['100%', '80%', '70%'] })};
 	height: 80%;
-	margin-bottom: 40px;
 `;

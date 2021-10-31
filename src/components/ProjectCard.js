@@ -27,8 +27,7 @@ const ProjectTile = styled.div`
 	flex-direction: column;
 	border-radius: 5px;
 	text-decoration: none;
-	// ${mq({ width: ['200px', '200px', '300px'] })};
-	// width: 300px;
+	${mq({ width: ['300px', '300px', '500px'] })};
 	margin: 1rem;
 	// border: 1px solid white;
 
@@ -47,7 +46,6 @@ const ImageContainer = styled.div`
 	position: relative;
 	display: flex;
 	z-index: 2;
-	${mq({ width: ['200px', '200px', '300px'] })};
 
 	img {
 		width: 100%;
