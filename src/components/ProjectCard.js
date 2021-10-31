@@ -40,7 +40,7 @@ export default function ProjectCard(props) {
 								href={gitHubLink}
 								target="_blank"
 								rel="noreferrer"
-								aria-label="Gmail"
+								aria-label="gitHub link"
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
@@ -50,7 +50,7 @@ export default function ProjectCard(props) {
 								href={hrefLink}
 								target="_blank"
 								rel="noreferrer"
-								aria-label="Gmail"
+								aria-label="project link"
 							>
 								<FontAwesomeIcon
 									icon={faLink}
@@ -107,24 +107,35 @@ const Overlay = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	transition: 0.35s ease-in-out;
 
 	h3 {
-		border: 1px solid blue;
+		padding: 3rem;
+		background: linear-gradient(
+			to left,
+			transparent,
+			${colors.ivory},
+			transparent 100%
+		);
+		background-position: 0 100%;
+		background-size: 100% 2px;
+		background-repeat: repeat-x;
 	}
-
+	
 	p {
-		border: 1px solid blue;
+		padding: 1.5rem;
 	}
 `;
 
 const OverlayIcons = styled.div`
-	border: 1px solid blue;
+	// border: 1px solid blue;
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 2rem;
 	padding: 1rem;
+	a {
+		color: inherit;
+	}
 `;
 
 const MoreInfoIcon = styled(FontAwesomeIcon)`
