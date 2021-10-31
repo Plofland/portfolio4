@@ -29,7 +29,7 @@ export default function Projects() {
 		goToSlide: currentSlide,
 		offsetRadius: 2,
 		showNavigation: false,
-		config: config.gentle,
+		config: config.stiff,
 		length: projectsList.length
 	};
 

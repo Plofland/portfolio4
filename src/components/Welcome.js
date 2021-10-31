@@ -9,10 +9,7 @@ export default function Welcome() {
 			<HeaderWrapper>
 				<Header>
 					<h2>Hello there, I'm Peter</h2>
-					<p>
-						& I'm a full stack software
-						developer
-					</p>
+					<p>FULL STACK SOFTWARE DEVELOPER</p>
 				</Header>
 			</HeaderWrapper>
 		</WelcomeSection>
@@ -29,18 +26,21 @@ const WelcomeSection = styled.div`
 	display: flex;
 	justify-content: center;
 `;
+
 const HeaderWrapper = styled.div`
 	padding-top: 62vh;
 `;
+
 const Header = styled.div`
 	background-color: ${colors.transCyanBlue};
 	padding: 1rem;
 
-	h2{
+	h2 {
 		${mq({ fontSize: ['2rem', '3rem', '3.5rem'] })};
+		padding: 2rem 1rem 0 1rem;
 	}
 
-	p{
-		margin: 1rem 0 0 0;
+	p {
+		padding: 1rem;
 	}
 `;

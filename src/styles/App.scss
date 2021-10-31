@@ -7,7 +7,11 @@
 }
 
 html,
-body, ul {
+body,
+ul,
+h2,
+h3,
+h4 {
 	margin: 0;
 	padding: 0;
 	font-family: 'Fira Sans', sans-serif, -apple-system,
@@ -15,22 +19,18 @@ body, ul {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: ivory;
+	text-align: center;
 
 	h2 {
 		font-size: 3.5em;
-		text-align: center;
-		color: ivory;
 		font-weight: 700;
 	}
 	h3 {
 		font-size: 2em;
-		text-align: center;
-		color: ivory;
 		font-weight: 600;
 	}
 	h4 {
-		font-size: .75em;
-		color: ivory;
+		font-size: 0.75em;
 		font-weight: 600;
 	}
 }
