@@ -1,50 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import projectsList from '../projectsList';
-import ProjectCard from './ProjectCard';
 import Fade from 'react-reveal/Fade';
+import ProjectCard from './ProjectCard';
 import { mq } from '../styles/themes';
 import styled from 'styled-components';
 import Carousel from 'react-spring-3d-carousel';
 import { config } from 'react-spring';
 
 export default function Projects() {
-	// const slides = [{key:1, content:<img src={LAN} alt="1" />}]
+	const [currentSlide, setCurrentSlide] = useState(0);
+
 	const slides = projectsList.map((project, index) => {
 		return {
 			key: project.id,
 			content: (
-				<img
-					src={project.imgSrc}
-					alt={project.imgAlt}
+				<ProjectCard
+					key={project.id}
+					project={project}
+					onClick={() =>
+						setCurrentSlide(project.id)
+					}
 				/>
 			)
 		};
 	});
 
-	let slideState = {
-		goToSlide: 0,
+	const slideState = {
+		goToSlide: currentSlide,
 		offsetRadius: 2,
-		showNavigation: true,
-		config: config.gentle
+		showNavigation: false,
+		config: config.gentle,
+		length: projectsList.length
 	};
 
 	return (
 		<ProjectsSection>
 			<ProjectSectionTitle>Works</ProjectSectionTitle>
-			{/* <Fade bottom cascade>
-				div with inline styling to fix Fade effect 
-				<div
-					style={{
-						display: 'flex',
-						flexDirection: 'row',
-						justifyContent: 'space-evenly',
-						alignContent: 'center',
-						height: '80%'
-					}}
-				>
-					<Carousel slides={slides}/>	
-				</div>
-			</Fade> */}
 			<CarouselContainer>
 				<Carousel
 					slides={slides}
@@ -53,6 +44,7 @@ export default function Projects() {
 					showNavigation={
 						slideState.showNavigation
 					}
+					length={slideState.length}
 					animationConfig={slideState.config}
 				/>
 			</CarouselContainer>
@@ -71,18 +63,14 @@ const ProjectsSection = styled.div`
 
 const ProjectSectionTitle = styled.h2`
 	height: 15vh;
+	border: 2px solid black;
 	display: flex;
 	align-items: center;
 `;
 
 const CarouselContainer = styled.div`
 	border: 1px solid white;
-	${mq({ width: ['100%', '70%', '50%'] })};
-	height: 100%;
+	${mq({ width: ['100%', '80%', '70%'] })};
+	height: 80%;
+	margin-bottom: 40px;
 `;
-
-// const Test = styled.div`
-// 	display: flex;
-// 	overflow-x: auto;
-// 	border: 2px solid black;
-// `;

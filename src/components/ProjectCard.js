@@ -22,7 +22,7 @@ export default function ProjectCard(props) {
 	);
 }
 
-const ProjectTile = styled.a`
+const ProjectTile = styled.div`
 	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
@@ -48,7 +48,7 @@ const ImageContainer = styled.div`
 	display: flex;
 	z-index: 2;
 	${mq({ width: ['200px', '200px', '300px'] })};
-	
+
 	img {
 		width: 100%;
 	}
