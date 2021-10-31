@@ -2,14 +2,26 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { colors, mq } from '../styles/themes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import {
+	faPlus,
+	faMinus,
+	faLink
+} from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function ProjectCard(props) {
-	const { projectName, hrefLink, imgSrc, imgAlt } =
-		props.project;
+	const {
+		projectName,
+		description,
+		techStack,
+		hrefLink,
+		gitHubLink,
+		imgSrc,
+		imgAlt
+	} = props.project;
 
 	const [visible, setVisible] = useState(false);
-	console.log(visible);
+
 	return (
 		<ProjectTile
 			href={hrefLink}
@@ -21,15 +33,36 @@ export default function ProjectCard(props) {
 				{visible && (
 					<Overlay>
 						<h3>{projectName}</h3>
-						<p>Hello there</p>
+						<p>{techStack}</p>
+						<p>{description}</p>
+						<OverlayIcons>
+							<a
+								href={gitHubLink}
+								target="_blank"
+								rel="noreferrer"
+								aria-label="Gmail"
+							>
+								<FontAwesomeIcon
+									icon={faGithub}
+								/>
+							</a>
+							<a
+								href={hrefLink}
+								target="_blank"
+								rel="noreferrer"
+								aria-label="Gmail"
+							>
+								<FontAwesomeIcon
+									icon={faLink}
+								/>
+							</a>
+						</OverlayIcons>
 					</Overlay>
 				)}
-				<Icons>
-					<FontAwesomeIcon
-						icon={faPlus}
-						onClick={() => setVisible(!visible)}
-					/>
-				</Icons>
+				<MoreInfoIcon
+					icon={visible ? faMinus : faPlus}
+					onClick={() => setVisible(!visible)}
+				/>
 				<img src={imgSrc} alt={imgAlt} />
 			</ImageContainer>
 			<ProjectTitle>{projectName}</ProjectTitle>
@@ -68,18 +101,40 @@ const ImageContainer = styled.div`
 
 const Overlay = styled.div`
 	position: absolute;
-	background-color: ${colors.transCyanBlue};
+	background-color: ${colors.transBlack};
 	width: 100%;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: 0.35s ease-in-out;
 
+	h3 {
+		border: 1px solid blue;
+	}
+
+	p {
+		border: 1px solid blue;
+	}
 `;
 
-const Icons = styled.div`
+const OverlayIcons = styled.div`
+	border: 1px solid blue;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 2rem;
+	padding: 1rem;
+`;
+
+const MoreInfoIcon = styled(FontAwesomeIcon)`
 	border: 1px solid red;
 	position: absolute;
 	z-index: 3;
 	right: 1rem;
 	bottom: 1rem;
+	font-size: 2rem;
+	background-color: ${colors.transBlack};
 `;
 
 const ProjectTitle = styled.h4`
