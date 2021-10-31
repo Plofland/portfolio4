@@ -1,20 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { mq } from '../styles/themes';
+import { colors, mq } from '../styles/themes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 export default function ProjectCard(props) {
 	const { projectName, hrefLink, imgSrc, imgAlt } =
 		props.project;
 
+	const [visible, setVisible] = useState(false);
+	console.log(visible);
 	return (
 		<ProjectTile
 			href={hrefLink}
 			target="_blank"
 			rel="noreferrer"
 			{...props}
-			className="horizontal-scrolling"
 		>
 			<ImageContainer>
+				{visible && (
+					<Overlay>
+						<h3>{projectName}</h3>
+						<p>Hello there</p>
+					</Overlay>
+				)}
+				<Icons>
+					<FontAwesomeIcon
+						icon={faPlus}
+						onClick={() => setVisible(!visible)}
+					/>
+				</Icons>
 				<img src={imgSrc} alt={imgAlt} />
 			</ImageContainer>
 			<ProjectTitle>{projectName}</ProjectTitle>
@@ -27,8 +42,7 @@ const ProjectTile = styled.div`
 	flex-direction: column;
 	text-decoration: none;
 	${mq({ width: ['300px', '300px', '500px'] })};
-	margin: 1rem;
-	// border: 1px solid white;
+	border: 1px solid white;
 
 	&:hover {
 		h4 {
@@ -45,11 +59,27 @@ const ImageContainer = styled.div`
 	position: relative;
 	display: flex;
 	z-index: 2;
-	
+
 	img {
 		border-radius: 5px;
 		width: 100%;
 	}
+`;
+
+const Overlay = styled.div`
+	position: absolute;
+	background-color: ${colors.transCyanBlue};
+	width: 100%;
+	height: 100%;
+
+`;
+
+const Icons = styled.div`
+	border: 1px solid red;
+	position: absolute;
+	z-index: 3;
+	right: 1rem;
+	bottom: 1rem;
 `;
 
 const ProjectTitle = styled.h4`

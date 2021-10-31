@@ -36,7 +36,6 @@ function Contact() {
 								<IconPedal>
 									<StyledIcon
 										icon={faEnvelope}
-										className="fa fa-envelope"
 									/>
 								</IconPedal>
 							</a>
@@ -58,7 +57,6 @@ function Contact() {
 								<IconPedal>
 									<StyledIcon
 										icon={faLinkedin}
-										className="fa fa-linkedin"
 									/>
 								</IconPedal>
 							</a>
@@ -80,7 +78,6 @@ function Contact() {
 								<IconPedal>
 									<StyledIcon
 										icon={faTwitter}
-										className="fa fa-twitter"
 									/>
 								</IconPedal>
 							</a>
@@ -102,7 +99,6 @@ function Contact() {
 								<IconPedal>
 									<StyledIcon
 										icon={faGithub}
-										className="fa fa-github"
 									/>
 								</IconPedal>
 							</a>
@@ -124,7 +120,6 @@ function Contact() {
 								<IconPedal>
 									<StyledIcon
 										icon={faInstagram}
-										className="fa fa-instagram"
 									/>
 								</IconPedal>
 							</a>
@@ -177,7 +172,6 @@ const Icon = styled.li`
 	})};
 	${mq({ width: ['1.5rem', '3rem', '4rem'] })};
 	aspect-ratio: 1;
-
 
 	&:hover span:nth-child(6) {
 		transform: scale(1.2);
