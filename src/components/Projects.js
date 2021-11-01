@@ -61,14 +61,14 @@ const ProjectsSection = styled.div`
 `;
 
 const ProjectSectionTitle = styled.h2`
-	// border: 2px solid black;
-	${mq({ height: ['25vh', '15vh', '15vh'] })};
+	border: 2px solid black;
 	display: flex;
 	align-items: center;
+	padding: 1rem;
 `;
 
 const CarouselContainer = styled.div`
-	// border: 1px solid white;
+	border: 1px solid white;
 	${mq({ width: ['100%', '80%', '70%'] })};
-	height: 80%;
+	${mq({ height: ['25%', '40%', '80%'] })};
 `;
