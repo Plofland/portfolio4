@@ -28,7 +28,6 @@ const App = () => (
 	<ReactFullpage
 		anchors={anchors}
 		navigation
-		navigationTooltips={anchors}
 		sectionsColor={[
 			`${colors.cyanBlue}`,
 			`${colors.oxfordBlue}`,

@@ -21,5 +21,6 @@ export const colors = {
 	turquoise: '#51B9CD',
 	darkText: '#222222',
 	transDarkText: '#22222222',
+	transBlack: '#020202e8',
 	oxfordBlue: '#364355'
 };
