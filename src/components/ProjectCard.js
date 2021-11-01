@@ -79,8 +79,7 @@ const ProjectTile = styled.div`
 	// border: 1px solid white;
 	display: flex;
 	flex-direction: column;
-	text-decoration: none;
-	${mq({ width: ['275px', '300px', '500px'] })};
+	${mq({ width: ['275px', '400px', '500px'] })};
 
 	@media (max-width: 280px) {
 		width: 220px;
@@ -90,7 +89,6 @@ const ProjectTile = styled.div`
 const ImageContainer = styled.div`
 	position: relative;
 	display: flex;
-	z-index: 2;
 
 	img {
 		border-radius: 5px;
@@ -124,7 +122,7 @@ const Overlay = styled.div`
 
 	p {
 		${mq({ padding: ['.5rem', '1rem', '1.5rem'] })};
-		${mq({ fontSize: ['.65rem', '1rem', '1.5rem'] })};
+		${mq({ fontSize: ['.65rem', '1rem', '1rem'] })};
 	}
 `;
 
