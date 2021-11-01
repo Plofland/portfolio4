@@ -62,25 +62,28 @@ export default function ProjectCard(props) {
 					</Overlay>
 				)}
 				<MoreInfoIcon
-					icon={visible ? faMinusCircle : faPlusCircle}
+					icon={
+						visible
+							? faMinusCircle
+							: faPlusCircle
+					}
 					onClick={() => setVisible(!visible)}
 				/>
 				<img src={imgSrc} alt={imgAlt} />
 			</ImageContainer>
-		
 		</ProjectTile>
 	);
 }
 
 const ProjectTile = styled.div`
+	// border: 1px solid white;
 	display: flex;
 	flex-direction: column;
 	text-decoration: none;
-	${mq({ width: ['300px', '300px', '500px'] })};
-	border: 1px solid white;
+	${mq({ width: ['275px', '300px', '500px'] })};
 
 	@media (max-width: 280px) {
-		width: 110px;
+		width: 220px;
 	}
 `;
 
@@ -105,7 +108,9 @@ const Overlay = styled.div`
 	justify-content: space-between;
 
 	h3 {
-		padding: 3rem;
+		${mq({ padding: ['1rem', '2rem', '3rem'] })};
+		${mq({ fontSize: ['1rem', '2rem', '3rem'] })};
+
 		background: linear-gradient(
 			to left,
 			transparent,
@@ -118,7 +123,8 @@ const Overlay = styled.div`
 	}
 
 	p {
-		padding: 1.5rem;
+		${mq({ padding: ['.5rem', '1rem', '1.5rem'] })};
+		${mq({ fontSize: ['.65rem', '1rem', '1.5rem'] })};
 	}
 `;
 
@@ -133,42 +139,23 @@ const OverlayIcons = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 2rem;
-	padding: 1rem;
+	${mq({ fontSize: ['1.75rem', '2rem', '2rem'] })};
+	${mq({ padding: ['.4rem', '1rem', '1.5rem'] })};
+
 	a {
 		color: inherit;
 	}
 `;
 
 const MoreInfoIcon = styled(FontAwesomeIcon)`
-	border: 2px solid ${colors.transDarkText};
+	// border: 2px solid ${colors.transCyanBlue};
 	border-radius: 50px;
 	position: absolute;
 	z-index: 3;
 	right: 1rem;
 	bottom: 1rem;
-	font-size: 2rem;
-	color: ${colors.cyanBlue};
-	// background-color: ${colors.transBlack};
+	${mq({ fontSize: ['1.5rem', '2rem', '2rem'] })};
+	color: ${colors.ivory};
+	background-color: ${colors.darkText};
 	cursor: pointer;
-`;
-
-const ProjectTitle = styled.h4`
-	display: flex;
-	flex-grow: 1;
-	margin: 0;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-	z-index: 1;
-
-	transform: translateY(-3rem);
-	${mq({
-		transform: [
-			'none',
-			'translateY(-4rem)',
-			'translateY(-4rem)'
-		]
-	})};
-	transition: ease-in-out 0.4s;
 `;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import projectsList from '../projectsList';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import ProjectCard from './ProjectCard';
 import { mq } from '../styles/themes';
 import styled from 'styled-components';
