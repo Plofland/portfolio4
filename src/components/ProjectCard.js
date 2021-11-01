@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { colors, mq } from '../styles/themes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-	faPlus,
-	faMinus,
+	faPlusCircle,
+	faMinusCircle,
 	faLink
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -33,8 +33,10 @@ export default function ProjectCard(props) {
 				{visible && (
 					<Overlay>
 						<h3>{projectName}</h3>
-						<p>{techStack}</p>
-						<p>{description}</p>
+						<ProjectDetails>
+							<p>{techStack}</p>
+							<p>{description}</p>
+						</ProjectDetails>
 						<OverlayIcons>
 							<a
 								href={gitHubLink}
@@ -60,12 +62,12 @@ export default function ProjectCard(props) {
 					</Overlay>
 				)}
 				<MoreInfoIcon
-					icon={visible ? faMinus : faPlus}
+					icon={visible ? faMinusCircle : faPlusCircle}
 					onClick={() => setVisible(!visible)}
 				/>
 				<img src={imgSrc} alt={imgAlt} />
 			</ImageContainer>
-			<ProjectTitle>{projectName}</ProjectTitle>
+		
 		</ProjectTile>
 	);
 }
@@ -76,12 +78,6 @@ const ProjectTile = styled.div`
 	text-decoration: none;
 	${mq({ width: ['300px', '300px', '500px'] })};
 	border: 1px solid white;
-
-	&:hover {
-		h4 {
-			transform: translateY(0);
-		}
-	}
 
 	@media (max-width: 280px) {
 		width: 110px;
@@ -120,10 +116,15 @@ const Overlay = styled.div`
 		background-size: 100% 2px;
 		background-repeat: repeat-x;
 	}
-	
+
 	p {
 		padding: 1.5rem;
 	}
+`;
+
+const ProjectDetails = styled.div`
+	display: flex;
+	flex-direction: column;
 `;
 
 const OverlayIcons = styled.div`
@@ -139,13 +140,16 @@ const OverlayIcons = styled.div`
 `;
 
 const MoreInfoIcon = styled(FontAwesomeIcon)`
-	border: 1px solid red;
+	border: 2px solid ${colors.transDarkText};
+	border-radius: 50px;
 	position: absolute;
 	z-index: 3;
 	right: 1rem;
 	bottom: 1rem;
 	font-size: 2rem;
-	background-color: ${colors.transBlack};
+	color: ${colors.cyanBlue};
+	// background-color: ${colors.transBlack};
+	cursor: pointer;
 `;
 
 const ProjectTitle = styled.h4`
