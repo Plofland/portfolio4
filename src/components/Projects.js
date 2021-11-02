@@ -14,7 +14,7 @@ export default function Projects() {
 		return {
 			key: project.id,
 			content: (
-				<Fade bottom delay={project.id*80}>
+				<Fade bottom delay={project.id*60}>
 					<ProjectCard
 						key={project.id}
 						project={project}
@@ -65,14 +65,14 @@ const ProjectsSection = styled.div`
 `;
 
 const ProjectSectionTitle = styled.h2`
-	border: 2px solid black;
+	// border: 2px solid black;
 	display: flex;
 	align-items: center;
 	padding: 1rem;
 `;
 
 const CarouselContainer = styled.div`
-	border: 1px solid white;
+	// border: 1px solid white;
 	display: grid;
 	${mq({ width: ['100%', '80%', '70%'] })};
 	${mq({ height: ['25%', '40%', '80%'] })};

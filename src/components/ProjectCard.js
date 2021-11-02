@@ -17,12 +17,10 @@ export default function ProjectCard(props) {
 		hrefLink,
 		gitHubLink,
 		imgSrc,
-		imgAlt,
-		id
+		imgAlt
 	} = props.project;
 
 	const [visible, setVisible] = useState(false);
-	console.log(id)
 
 	return (
 		<ProjectTile
