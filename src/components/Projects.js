@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import projectsList from '../projectsList';
-// import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
 import ProjectCard from './ProjectCard';
 import { mq } from '../styles/themes';
 import styled from 'styled-components';
@@ -14,13 +14,15 @@ export default function Projects() {
 		return {
 			key: project.id,
 			content: (
-				<ProjectCard
-					key={project.id}
-					project={project}
-					onClick={() =>
-						setCurrentSlide(project.id)
-					}
-				/>
+				<Fade bottom delay={project.id*60}>
+					<ProjectCard
+						key={project.id}
+						project={project}
+						onClick={() =>
+							setCurrentSlide(project.id)
+						}
+					/>
+				</Fade>
 			)
 		};
 	});
@@ -37,16 +39,18 @@ export default function Projects() {
 		<ProjectsSection>
 			<ProjectSectionTitle>Works</ProjectSectionTitle>
 			<CarouselContainer>
-				<Carousel
-					slides={slides}
-					goToSlide={slideState.goToSlide}
-					offsetRadius={slideState.offsetRadius}
-					showNavigation={
-						slideState.showNavigation
-					}
-					length={slideState.length}
-					animationConfig={slideState.config}
-				/>
+					<Carousel
+						slides={slides}
+						goToSlide={slideState.goToSlide}
+						offsetRadius={
+							slideState.offsetRadius
+						}
+						showNavigation={
+							slideState.showNavigation
+						}
+						length={slideState.length}
+						animationConfig={slideState.config}
+					/>
 			</CarouselContainer>
 		</ProjectsSection>
 	);
@@ -62,13 +66,14 @@ const ProjectsSection = styled.div`
 
 const ProjectSectionTitle = styled.h2`
 	// border: 2px solid black;
-	${mq({ height: ['25vh', '15vh', '15vh'] })};
 	display: flex;
 	align-items: center;
+	padding: 1rem;
 `;
 
 const CarouselContainer = styled.div`
 	// border: 1px solid white;
+	display: grid;
 	${mq({ width: ['100%', '80%', '70%'] })};
-	height: 80%;
+	${mq({ height: ['25%', '40%', '80%'] })};
 `;
