@@ -152,7 +152,7 @@ const MoreInfoIcon = styled(FontAwesomeIcon)`
 	z-index: 3;
 	right: 1rem;
 	bottom: 1rem;
-	${mq({ fontSize: ['1.5rem', '2rem', '2rem'] })};
+	${mq({ fontSize: ['1.5rem', '2rem', '2.5rem'] })};
 	color: ${colors.ivory};
 	background-color: ${colors.darkText};
 	cursor: pointer;
