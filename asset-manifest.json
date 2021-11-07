@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a239347.chunk.css",
+    "main.css": "/static/css/main.b332490a.chunk.css",
     "main.js": "/static/js/main.58cd629d.chunk.js",
     "main.js.map": "/static/js/main.58cd629d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.34cae29c.js",
@@ -10,7 +10,7 @@
     "static/js/3.7b9490b6.chunk.js": "/static/js/3.7b9490b6.chunk.js",
     "static/js/3.7b9490b6.chunk.js.map": "/static/js/3.7b9490b6.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5a239347.chunk.css.map": "/static/css/main.5a239347.chunk.css.map",
+    "static/css/main.b332490a.chunk.css.map": "/static/css/main.b332490a.chunk.css.map",
     "static/js/2.d3ac591e.chunk.js.LICENSE.txt": "/static/js/2.d3ac591e.chunk.js.LICENSE.txt",
     "static/media/7ayatiCafe.927c5e52.png": "/static/media/7ayatiCafe.927c5e52.png",
     "static/media/LAN.1f43cff6.jpg": "/static/media/LAN.1f43cff6.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.34cae29c.js",
     "static/js/2.d3ac591e.chunk.js",
-    "static/css/main.5a239347.chunk.css",
+    "static/css/main.b332490a.chunk.css",
     "static/js/main.58cd629d.chunk.js"
   ]
 }
