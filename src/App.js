@@ -10,7 +10,7 @@ import Welcome from './components/Welcome';
 import About from './components/About';
 
 import './styles/App.scss';
-import {colors} from './styles/themes'
+import { colors } from './styles/themes';
 
 class MySection extends React.Component {
 	render() {
@@ -34,20 +34,8 @@ const App = () => (
 			`${colors.cyanBlue}`,
 			`${colors.mineralGreen}`
 		]}
-		onLeave={(origin, destination, direction) => {
-			console.log('onLeave event', {
-				origin,
-				destination,
-				direction
-			});
-		}}
 		render={({ state, fullpageApi }) => {
-			console.log(
-				'render prop change',
-				state,
-				fullpageApi
-			); // eslint-disable-line no-console
-
+			console.clear()
 			return (
 				<div>
 					<MySection content={<Welcome />} />
