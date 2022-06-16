@@ -13,13 +13,7 @@ export default function About() {
 					<Fade bottom cascade>
 						<div>
 							<p>
-								I enjoy overcoming obstacles
-								and seeing a project from
-								conception to deployment.
-								I'm capable of working on
-								both the front and back end
-								but I have an affinity for
-								UI/UX design.
+								I'm a Junior Developer with experience and interest in the tech startup scene in New York City. I love working with newer technologies and building towards the future.
 							</p>
 							<p>
 								I always love learning
