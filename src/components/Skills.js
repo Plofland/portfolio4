@@ -188,9 +188,7 @@ const SkillsSection = styled.div`
 	text-align: center;
 	background-image: url(${wreckBeachRocks});
 	background-position: top center;
-	background-attachment: local;
-	//!get this fixed attachment working
-	// background-attachment: fixed;
+	background-attachment: fixed;
 	background-size: cover;
 `;
 
