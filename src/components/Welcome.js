@@ -18,7 +18,7 @@ export default function Welcome() {
 
 const WelcomeSection = styled.div`
 	text-align: center;
-	height: 100%;
+	height: 100vh;
 	background-size: cover;
 	background-image: url(${wreckBeach});
 	background-position: top center;

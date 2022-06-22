@@ -51,6 +51,7 @@ const AboutSection = styled.div`
 	justify-content: space-evenly;
 	align-items: center;
 	${mq({ fontSize: ['.75rem', '1rem', '1rem'] })};
+	background-color: ${colors.oxfordBlue};
 `;
 
 const DescriptionContact = styled.div`

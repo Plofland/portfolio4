@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import projectsList from '../projectsList';
 import Fade from 'react-reveal/Fade';
 import ProjectCard from './ProjectCard';
-import { mq } from '../styles/themes';
+import { colors, mq } from '../styles/themes';
 import styled from 'styled-components';
 import Carousel from 'react-spring-3d-carousel';
 import { config } from 'react-spring';
@@ -62,6 +62,7 @@ const ProjectsSection = styled.div`
 	justify-content: space-evenly;
 	align-items: center;
 	height: 100vh;
+	background-color: ${colors.mineralGreen};
 `;
 
 const ProjectSectionTitle = styled.h2`

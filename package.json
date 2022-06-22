@@ -20,7 +20,9 @@
 		"react-reveal": "^1.2.2",
 		"react-scripts": "4.0.3",
 		"sass": "^1.42.1",
-		"styled-components": "^5.3.1"
+		"slick-carousel": "^1.8.1",
+		"styled-components": "^5.3.1",
+		"web-vitals": "^1.1.2"
 	},
 	"scripts": {
 		"start": "react-scripts start",
