@@ -1,56 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import projectsList from '../projectsList';
 import Fade from 'react-reveal/Fade';
 import ProjectCard from './ProjectCard';
 import { colors, mq } from '../styles/themes';
 import styled from 'styled-components';
-import Carousel from 'react-spring-3d-carousel';
-import { config } from 'react-spring';
 
 export default function Projects() {
-	const [currentSlide, setCurrentSlide] = useState(0);
-
-	const slides = projectsList.map((project, index) => {
-		return {
-			key: project.id,
-			content: (
-				<Fade bottom delay={project.id*60}>
-					<ProjectCard
-						key={project.id}
-						project={project}
-						onClick={() =>
-							setCurrentSlide(project.id)
-						}
-					/>
-				</Fade>
-			)
-		};
-	});
-
-	const slideState = {
-		goToSlide: currentSlide,
-		offsetRadius: 2,
-		showNavigation: false,
-		config: config.stiff,
-		length: projectsList.length
-	};
-
 	return (
 		<ProjectsSection>
 			<ProjectSectionTitle>Works</ProjectSectionTitle>
 			<CarouselContainer>
-					<Carousel
-						slides={slides}
-						goToSlide={slideState.goToSlide}
-						offsetRadius={
-							slideState.offsetRadius
-						}
-						showNavigation={
-							slideState.showNavigation
-						}
-						length={slideState.length}
-						animationConfig={slideState.config}
-					/>
+				{projectsList.map((project) => (
+					<Fade bottom delay={project.id * 60}>
+						<ProjectCard
+							key={project.id}
+							project={project}
+						/>
+					</Fade>
+				))}
 			</CarouselContainer>
 		</ProjectsSection>
 	);
