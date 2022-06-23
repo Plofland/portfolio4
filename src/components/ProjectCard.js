@@ -77,16 +77,14 @@ export default function ProjectCard(props) {
 
 const ProjectTile = styled.div`
 	// border: 1px solid white;
-	//DELETE THIS
-	opacity: 0.25;
 
 	display: flex;
 	flex-direction: column;
-	${mq({ width: ['275px', '400px', '500px'] })};
+	
 
-	@media (max-width: 280px) {
+	/* @media (max-width: 280px) {
 		width: 220px;
-	}
+	} */
 `;
 
 const ImageContainer = styled.div`
