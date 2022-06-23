@@ -1,4 +1,4 @@
-import twitterClone from './images/nextJSTwitterClone.png';
+// import twitterClone from './images/nextJSTwitterClone.png';
 import coMake from './images/co-make.png';
 import LAN from './images/LAN.jpg';
 import ayati from './images/7ayatiCafe.png'
