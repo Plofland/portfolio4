@@ -14,8 +14,8 @@ const App = () => {
 			<Welcome />
 			<About />
 			<Skills />
-			<Deck />
 			<Projects />
+			<Deck />
 		</AppDiv>
 	);
 };

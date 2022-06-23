@@ -76,12 +76,8 @@ export default function ProjectCard(props) {
 }
 
 const ProjectTile = styled.div`
-	// border: 1px solid white;
-
 	display: flex;
 	flex-direction: column;
-	
-
 	/* @media (max-width: 280px) {
 		width: 220px;
 	} */
@@ -147,7 +143,6 @@ const OverlayIcons = styled.div`
 `;
 
 const MoreInfoIcon = styled(FontAwesomeIcon)`
-	// border: 2px solid ${colors.transCyanBlue};
 	border-radius: 50px;
 	position: absolute;
 	z-index: 3;

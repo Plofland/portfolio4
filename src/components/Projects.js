@@ -14,11 +14,10 @@ export default function Projects() {
 	return (
 		<ProjectsSection>
 			<ProjectSectionTitle>Works</ProjectSectionTitle>
-			<Swiper
+			<StyledSwiper
 				effect={'cards'}
 				grabCursor={true}
 				modules={[EffectCards]}
-				style={{ width: '500px', height: '500px' }}
 			>
 				{projectsList.map((project) => (
 					<SwiperSlide>
@@ -33,7 +32,7 @@ export default function Projects() {
 						</Fade>
 					</SwiperSlide>
 				))}
-			</Swiper>
+			</StyledSwiper>
 		</ProjectsSection>
 	);
 }
@@ -48,13 +47,12 @@ const ProjectsSection = styled.div`
 `;
 
 const ProjectSectionTitle = styled.h2`
-	// border: 2px solid black;
 	display: flex;
 	align-items: center;
 	padding: 1rem;
 `;
 
-// const StyledSwiper = styled(Swiper)`
-// 	${mq({ width: ['275px', '400px', '500px'] })};
-// 	${mq({ height: ['275px', '400px', '500px'] })};
-// `;
+const StyledSwiper = styled(Swiper)`
+	${mq({ width: ['275px', '400px', '500px'] })};
+	${mq({ height: ['275px', '400px', '500px'] })};
+`;
