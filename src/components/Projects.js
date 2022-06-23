@@ -1,6 +1,5 @@
 import React from 'react';
 import projectsList from '../projectsList';
-import Fade from 'react-reveal/Fade';
 import ProjectCard from './ProjectCard';
 import { colors, mq } from '../styles/themes';
 import styled from 'styled-components';
@@ -21,15 +20,12 @@ export default function Projects() {
 			>
 				{projectsList.map((project) => (
 					<SwiperSlide>
-						<Fade
-							bottom
-							delay={project.id * 60}
-						>
+						
 							<ProjectCard
 								key={project.id}
 								project={project}
 							/>
-						</Fade>
+						
 					</SwiperSlide>
 				))}
 			</StyledSwiper>
