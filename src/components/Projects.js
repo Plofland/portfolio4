@@ -8,6 +8,8 @@ import {
 	SwiperSlide
 } from 'swiper/react/swiper-react';
 import { EffectCards } from 'swiper';
+import 'swiper/swiper.scss'; // core Swiper
+import 'swiper/modules/effect-cards/effect-cards.scss';
 
 export default function Projects() {
 	return (
