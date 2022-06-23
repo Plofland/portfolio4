@@ -1,11 +1,11 @@
 import React from 'react';
+import './styles/App.scss';
+import styled from 'styled-components';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Welcome from './components/Welcome';
 import About from './components/About';
 
-import './styles/App.scss';
-import styled from 'styled-components';
 import Deck from './components/Deck';
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
 			<About />
 			<Skills />
 			<Projects />
-			<Deck />
+			{/* <Deck /> */}
 		</AppDiv>
 	);
 };
