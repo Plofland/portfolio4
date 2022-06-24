@@ -8,7 +8,7 @@ export default function Welcome() {
 		<WelcomeSection>
 			<HeaderWrapper>
 				<Header>
-					<h2>Hello there, I'm Peter</h2>
+					<h2>Hello, I'm Peter</h2>
 					<p>FULL STACK SOFTWARE DEVELOPER</p>
 				</Header>
 			</HeaderWrapper>
