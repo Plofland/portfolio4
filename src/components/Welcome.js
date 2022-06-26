@@ -19,10 +19,10 @@ export default function Welcome() {
 const WelcomeSection = styled.div`
 	text-align: center;
 	height: 100vh;
-	background-size: cover;
 	background-image: url(${wreckBeach});
 	background-position: top center;
-	background-attachment: fixed;
+	${mq({ backgroundAttachment: ['scroll', 'fixed', 'fixed'] })};
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 `;
