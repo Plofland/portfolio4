@@ -22,12 +22,10 @@ export default function Projects() {
 			>
 				{projectsList.map((project) => (
 					<SwiperSlide>
-						
-							<ProjectCard
-								key={project.id}
-								project={project}
-							/>
-						
+						<ProjectCard
+							key={project.id}
+							project={project}
+						/>
 					</SwiperSlide>
 				))}
 			</StyledSwiper>
@@ -51,6 +49,6 @@ const ProjectSectionTitle = styled.h2`
 `;
 
 const StyledSwiper = styled(Swiper)`
-	${mq({ width: ['275px', '400px', '500px'] })};
-	${mq({ height: ['275px', '400px', '500px'] })};
+	${mq({ width: ['275px', '300px', '400px'] })};
+	${mq({ height: ['275px', '300px', '400px'] })};
 `;
