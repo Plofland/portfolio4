@@ -78,9 +78,6 @@ export default function ProjectCard(props) {
 const ProjectTile = styled.div`
 	display: flex;
 	flex-direction: column;
-	/* @media (max-width: 280px) {
-		width: 220px;
-	} */
 `;
 
 const ImageContainer = styled.div`
@@ -88,8 +85,13 @@ const ImageContainer = styled.div`
 	display: flex;
 
 	img {
-		border-radius: 5px;
+		border-radius: 10px;
 		width: 100%;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+			0 2px 2px rgba(0, 0, 0, 0.11),
+			0 4px 4px rgba(0, 0, 0, 0.11),
+			0 6px 8px rgba(0, 0, 0, 0.11),
+			0 8px 16px rgba(0, 0, 0, 0.11);
 	}
 `;
 
@@ -129,7 +131,6 @@ const ProjectDetails = styled.div`
 `;
 
 const OverlayIcons = styled.div`
-	// border: 1px solid blue;
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;

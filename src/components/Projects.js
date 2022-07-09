@@ -22,12 +22,10 @@ export default function Projects() {
 			>
 				{projectsList.map((project) => (
 					<SwiperSlide>
-						
-							<ProjectCard
-								key={project.id}
-								project={project}
-							/>
-						
+						<ProjectCard
+							key={project.id}
+							project={project}
+						/>
 					</SwiperSlide>
 				))}
 			</StyledSwiper>
