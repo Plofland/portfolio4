@@ -51,6 +51,6 @@ const ProjectSectionTitle = styled.h2`
 `;
 
 const StyledSwiper = styled(Swiper)`
-	${mq({ width: ['275px', '400px', '500px'] })};
-	${mq({ height: ['275px', '400px', '500px'] })};
+	${mq({ width: ['275px', '300px', '400px'] })};
+	${mq({ height: ['275px', '300px', '400px'] })};
 `;
