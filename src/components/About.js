@@ -13,7 +13,13 @@ export default function About() {
 					<Fade bottom cascade>
 						<div>
 							<p>
-								I'm a Junior Developer with experience and interest in the tech startup scene in New York City. I love working with newer technologies and building towards the future.
+								I'm a software developer &
+								photographer with experience
+								and interest in the tech
+								startup scene in New York
+								City. I love working with
+								newer technologies and
+								building towards the future.
 							</p>
 							<p>
 								I always love learning
